@@ -106,7 +106,7 @@ export default function Home() {
               Conoce el curso
             </a>
             <a
-              href="#verificar"
+              href="/verificar"
               className="border border-neutral-700 hover:border-neutral-500 transition-colors font-medium rounded-full px-6 py-3"
             >
               Verificar un certificado
@@ -145,7 +145,7 @@ export default function Home() {
 
       <section id="curso" className="max-w-5xl mx-auto px-6 py-20">
         <h2 className="text-2xl font-semibold mb-4">
-          Fuego y Parrilla — el curso de lanzamiento
+          Fuego y Parrilla â el curso de lanzamiento
         </h2>
         <p className="text-neutral-400 max-w-3xl leading-relaxed">
           Un recorrido de tres niveles pensado para formar profesionales
@@ -238,15 +238,15 @@ export default function Home() {
         </div>
       </section>
 
-      <footer
-        id="verificar"
-        className="border-t border-neutral-800/80 py-10"
-      >
+      <footer className="border-t border-neutral-800/80 py-10">
         <div className="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row justify-between gap-4 text-sm text-neutral-500">
-          <span>© {new Date().getFullYear()} IGNI</span>
+          <span>Â© {new Date().getFullYear()} IGNI</span>
           <div className="flex gap-6">
             <a href="/alumno" className="hover:text-neutral-300">
               Area de alumno
+            </a>
+            <a href="/verificar" className="hover:text-neutral-300">
+              Verificar certificado
             </a>
             <a href="#" className="hover:text-neutral-300">
               Terminos
