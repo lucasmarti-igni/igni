@@ -17,8 +17,20 @@ const niveles = [
 ];
 
 const proximamente = [
+  {
+    nombre: "Maestro Veggie a la Brasa",
+    detalle: "Segundo curso confirmado",
+  },
   { nombre: "Pasteleria", detalle: "Proximamente" },
   { nombre: "Cocina Regional", detalle: "Proximamente" },
+];
+
+const instituciones = [
+  { nombre: "NIU", tipo: "Certificacion universitaria" },
+  { nombre: "FELAMS", tipo: "Asociacion profesional" },
+  { nombre: "APC", tipo: "Asociacion profesional" },
+  { nombre: "World BBQ Argentina", tipo: "Asociacion profesional" },
+  { nombre: "Club Parrillero Costa Brava", tipo: "Asociacion profesional" },
 ];
 
 export default function Home() {
@@ -35,6 +47,12 @@ export default function Home() {
             </a>
             <a href="#niveles" className="hover:text-white transition-colors">
               Niveles y certificacion
+            </a>
+            <a
+              href="#instituciones"
+              className="hover:text-white transition-colors"
+            >
+              Instituciones
             </a>
             <a
               href="#proximamente"
@@ -142,6 +160,42 @@ export default function Home() {
       </section>
 
       <section
+        id="instituciones"
+        className="max-w-5xl mx-auto px-6 py-20 border-t border-neutral-800/80"
+      >
+        <h2 className="text-2xl font-semibold mb-2">Respaldo institucional</h2>
+        <p className="text-neutral-400 mb-10 max-w-2xl">
+          IGNI emite certificaciones junto a asociaciones profesionales y una
+          universidad acreditada, con convenios firmados que avalan cada
+          nivel del programa.
+        </p>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-14">
+          {instituciones.map((i) => (
+            <div
+              key={i.nombre}
+              className="rounded-xl border border-neutral-800 bg-neutral-900/60 p-6"
+            >
+              <p className="font-medium">{i.nombre}</p>
+              <p className="mt-2 text-sm text-neutral-500">{i.tipo}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="rounded-xl border border-neutral-800 bg-neutral-900/40 p-8">
+          <p className="text-xs uppercase tracking-wide text-orange-400 mb-3">
+            Direccion
+          </p>
+          <p className="font-medium text-lg">Lucas Marti Boldrini</p>
+          <p className="mt-2 text-neutral-400 text-sm leading-relaxed max-w-2xl">
+            Presidente de AEAP (Asociacion Espanola de Asadores
+            Profesionales), Embajador de Marca Pais Argentina, autor de dos
+            libros publicados y conductor del programa de radio
+            &quot;Aca Como Alla&quot;.
+          </p>
+        </div>
+      </section>
+
+      <section
         id="proximamente"
         className="max-w-5xl mx-auto px-6 py-20 border-t border-neutral-800/80"
       >
@@ -150,7 +204,7 @@ export default function Home() {
           IGNI crece de forma progresiva. Estas escuelas ya estan en
           camino.
         </p>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {proximamente.map((p) => (
             <div
               key={p.nombre}
