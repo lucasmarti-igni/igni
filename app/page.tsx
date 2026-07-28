@@ -41,7 +41,13 @@ export default function Home() {
           <span className="text-xl font-bold tracking-tight">
             IGNI<span className="text-orange-500">.</span>
           </span>
-          <nav className="hidden sm:flex gap-8 text-sm text-neutral-300">
+          <nav className="hidden lg:flex gap-7 text-sm text-neutral-300">
+            <a
+              href="#quienes-somos"
+              className="hover:text-white transition-colors"
+            >
+              Quienes somos
+            </a>
             <a href="#curso" className="hover:text-white transition-colors">
               El curso
             </a>
@@ -62,10 +68,10 @@ export default function Home() {
             </a>
           </nav>
           <a
-            href="#curso"
+            href="/alumno"
             className="text-sm font-medium bg-orange-600 hover:bg-orange-500 transition-colors rounded-full px-4 py-2"
           >
-            Ingresar
+            Area de alumno
           </a>
         </div>
       </header>
@@ -106,6 +112,34 @@ export default function Home() {
               Verificar un certificado
             </a>
           </div>
+        </div>
+      </section>
+
+      <section
+        id="quienes-somos"
+        className="max-w-5xl mx-auto px-6 py-20 border-b border-neutral-800/80"
+      >
+        <h2 className="text-2xl font-semibold mb-4">Quienes somos</h2>
+        <p className="text-neutral-400 max-w-3xl leading-relaxed mb-10">
+          IGNI es una institucion de formacion profesional dedicada a
+          certificar los oficios del fuego. Nace con una escuela, Fuego y
+          Parrilla, y crece de forma progresiva hacia nuevas escuelas y
+          especialidades. Nuestro modelo combina contenido practico con una
+          doble certificacion: la de una asociacion profesional de
+          referencia y la de una universidad acreditada, respaldadas por
+          convenios firmados y certificados verificables con codigo QR.
+        </p>
+        <div className="rounded-xl border border-neutral-800 bg-neutral-900/40 p-8">
+          <p className="text-xs uppercase tracking-wide text-orange-400 mb-3">
+            Direccion
+          </p>
+          <p className="font-medium text-lg">Lucas Marti Boldrini</p>
+          <p className="mt-2 text-neutral-400 text-sm leading-relaxed max-w-2xl">
+            Presidente de AEAP (Asociacion Espanola de Asadores
+            Profesionales), Embajador de Marca Pais Argentina, autor de dos
+            libros publicados y conductor del programa de radio
+            &quot;Aca Como Alla&quot;.
+          </p>
         </div>
       </section>
 
@@ -169,7 +203,7 @@ export default function Home() {
           universidad acreditada, con convenios firmados que avalan cada
           nivel del programa.
         </p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-14">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {instituciones.map((i) => (
             <div
               key={i.nombre}
@@ -179,19 +213,6 @@ export default function Home() {
               <p className="mt-2 text-sm text-neutral-500">{i.tipo}</p>
             </div>
           ))}
-        </div>
-
-        <div className="rounded-xl border border-neutral-800 bg-neutral-900/40 p-8">
-          <p className="text-xs uppercase tracking-wide text-orange-400 mb-3">
-            Direccion
-          </p>
-          <p className="font-medium text-lg">Lucas Marti Boldrini</p>
-          <p className="mt-2 text-neutral-400 text-sm leading-relaxed max-w-2xl">
-            Presidente de AEAP (Asociacion Espanola de Asadores
-            Profesionales), Embajador de Marca Pais Argentina, autor de dos
-            libros publicados y conductor del programa de radio
-            &quot;Aca Como Alla&quot;.
-          </p>
         </div>
       </section>
 
@@ -224,6 +245,9 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row justify-between gap-4 text-sm text-neutral-500">
           <span>© {new Date().getFullYear()} IGNI</span>
           <div className="flex gap-6">
+            <a href="/alumno" className="hover:text-neutral-300">
+              Area de alumno
+            </a>
             <a href="#" className="hover:text-neutral-300">
               Terminos
             </a>
