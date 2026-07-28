@@ -31,6 +31,12 @@ const instituciones = [
   { nombre: "APC", tipo: "Asociacion profesional" },
   { nombre: "World BBQ Argentina", tipo: "Asociacion profesional" },
   { nombre: "Club Parrillero Costa Brava", tipo: "Asociacion profesional" },
+  { nombre: "AEAP", tipo: "Asociacion profesional" },
+  { nombre: "Asociacion Santafesina", tipo: "Asociacion profesional" },
+  {
+    nombre: "Asociacion Ecuatoriana de Asadores",
+    tipo: "Asociacion profesional",
+  },
 ];
 
 export default function Home() {
