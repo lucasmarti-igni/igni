@@ -32,6 +32,9 @@ export default function SiteHeader() {
           >
             Instituciones
           </Link>
+          <Link href="/tienda" className="hover:text-white transition-colors">
+            Tienda
+          </Link>
           <Link
             href="/proximamente"
             className="hover:text-white transition-colors"
