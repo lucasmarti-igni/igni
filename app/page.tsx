@@ -16,6 +16,13 @@ const niveles = [
   },
 ];
 
+const cursos = [
+  {
+    nombre: "Fuego y Parrilla",
+    detalle: "Curso de lanzamiento de IGNI. 3 niveles con certificacion dual.",
+  },
+];
+
 const proximamente = [
   {
     nombre: "Maestro Veggie a la Brasa",
@@ -25,8 +32,11 @@ const proximamente = [
   { nombre: "Cocina Regional", detalle: "Proximamente" },
 ];
 
-const instituciones = [
+const universidades = [
   { nombre: "NIU", tipo: "Certificacion universitaria" },
+];
+
+const asociaciones = [
   { nombre: "FELAMS", tipo: "Asociacion profesional" },
   { nombre: "APC", tipo: "Asociacion profesional" },
   { nombre: "World BBQ Argentina", tipo: "Asociacion profesional" },
@@ -54,8 +64,14 @@ export default function Home() {
             >
               Quienes somos
             </a>
-            <a href="#curso" className="hover:text-white transition-colors">
-              El curso
+            <a
+              href="#autoridades"
+              className="hover:text-white transition-colors"
+            >
+              Autoridades y docentes
+            </a>
+            <a href="#cursos" className="hover:text-white transition-colors">
+              Los cursos
             </a>
             <a href="#niveles" className="hover:text-white transition-colors">
               Niveles y certificacion
@@ -126,7 +142,7 @@ export default function Home() {
         className="max-w-5xl mx-auto px-6 py-20 border-b border-neutral-800/80"
       >
         <h2 className="text-2xl font-semibold mb-4">Quienes somos</h2>
-        <p className="text-neutral-400 max-w-3xl leading-relaxed mb-10">
+        <p className="text-neutral-400 max-w-3xl leading-relaxed">
           IGNI es una institucion de formacion profesional dedicada a
           certificar los oficios del fuego. Nace con una escuela, Fuego y
           Parrilla, y crece de forma progresiva hacia nuevas escuelas y
@@ -135,6 +151,15 @@ export default function Home() {
           referencia y la de una universidad acreditada, respaldadas por
           convenios firmados y certificados verificables con codigo QR.
         </p>
+      </section>
+
+      <section
+        id="autoridades"
+        className="max-w-5xl mx-auto px-6 py-20 border-b border-neutral-800/80"
+      >
+        <h2 className="text-2xl font-semibold mb-4">
+          Autoridades y docentes
+        </h2>
         <div className="grid sm:grid-cols-2 gap-4">
           <div className="rounded-xl border border-neutral-800 bg-neutral-900/40 p-8">
             <p className="text-xs uppercase tracking-wide text-orange-400 mb-3">
@@ -157,19 +182,30 @@ export default function Home() {
             </p>
           </div>
         </div>
+        <p className="mt-6 text-sm text-neutral-500">
+          El cuerpo docente que dicta cada nivel se suma a esta seccion a
+          medida que se confirma.
+        </p>
       </section>
 
-      <section id="curso" className="max-w-5xl mx-auto px-6 py-20">
-        <h2 className="text-2xl font-semibold mb-4">
-          Fuego y Parrilla â el curso de lanzamiento
-        </h2>
-        <p className="text-neutral-400 max-w-3xl leading-relaxed">
-          Un recorrido de tres niveles pensado para formar profesionales
-          reales del oficio, con contenido en video, materiales descargables
-          y evaluacion practica en cada etapa. Cada nivel completado suma un
-          certificado propio; al terminar los tres, se emite ademas la
-          certificacion universitaria.
+      <section id="cursos" className="max-w-5xl mx-auto px-6 py-20">
+        <h2 className="text-2xl font-semibold mb-2">Los cursos</h2>
+        <p className="text-neutral-400 mb-10 max-w-2xl">
+          Listado de cursos disponibles en IGNI. Cada uno tiene su propio
+          recorrido de niveles y certificacion.
         </p>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {cursos.map((c) => (
+            <a
+              key={c.nombre}
+              href="#niveles"
+              className="rounded-xl border border-neutral-800 bg-neutral-900/60 p-6 hover:border-neutral-600 transition-colors"
+            >
+              <p className="font-medium text-lg">{c.nombre}</p>
+              <p className="mt-2 text-sm text-neutral-500">{c.detalle}</p>
+            </a>
+          ))}
+        </div>
       </section>
 
       <section
@@ -215,18 +251,37 @@ export default function Home() {
       >
         <h2 className="text-2xl font-semibold mb-2">Respaldo institucional</h2>
         <p className="text-neutral-400 mb-10 max-w-2xl">
-          IGNI emite certificaciones junto a asociaciones profesionales y una
-          universidad acreditada, con convenios firmados que avalan cada
+          IGNI emite certificaciones junto a una universidad acreditada y
+          asociaciones profesionales, con convenios firmados que avalan cada
           nivel del programa.
         </p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {instituciones.map((i) => (
+
+        <h3 className="text-sm uppercase tracking-wide text-orange-400 mb-4">
+          Universidad
+        </h3>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+          {universidades.map((u) => (
             <div
-              key={i.nombre}
+              key={u.nombre}
               className="rounded-xl border border-neutral-800 bg-neutral-900/60 p-6"
             >
-              <p className="font-medium">{i.nombre}</p>
-              <p className="mt-2 text-sm text-neutral-500">{i.tipo}</p>
+              <p className="font-medium">{u.nombre}</p>
+              <p className="mt-2 text-sm text-neutral-500">{u.tipo}</p>
+            </div>
+          ))}
+        </div>
+
+        <h3 className="text-sm uppercase tracking-wide text-orange-400 mb-4">
+          Asociaciones
+        </h3>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {asociaciones.map((a) => (
+            <div
+              key={a.nombre}
+              className="rounded-xl border border-neutral-800 bg-neutral-900/60 p-6"
+            >
+              <p className="font-medium">{a.nombre}</p>
+              <p className="mt-2 text-sm text-neutral-500">{a.tipo}</p>
             </div>
           ))}
         </div>
