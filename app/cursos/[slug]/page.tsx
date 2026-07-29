@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { cursos } from "@/lib/cursos";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 
 export const dynamic = "force-static";
 
@@ -21,22 +23,16 @@ export default function CursoPage({
 
   return (
     <main className="min-h-screen">
-      <header className="border-b border-neutral-800/80 sticky top-0 bg-neutral-950/90 backdrop-blur z-10">
-        <div className="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
-          <Link href="/" className="text-xl font-bold tracking-tight">
-            IGNI<span className="text-orange-500">.</span>
-          </Link>
-          <Link
-            href="/#cursos"
-            className="text-sm text-neutral-300 hover:text-white transition-colors"
-          >
-            Volver a los cursos
-          </Link>
-        </div>
-      </header>
+      <SiteHeader />
 
       <section className="max-w-5xl mx-auto px-6 py-16">
-        <span className="inline-block text-xs uppercase tracking-[0.2em] text-orange-400 mb-4">
+        <Link
+          href="/cursos"
+          className="text-sm text-neutral-400 hover:text-neutral-200 transition-colors"
+        >
+          â Volver a los cursos
+        </Link>
+        <span className="block mt-6 text-xs uppercase tracking-[0.2em] text-orange-400 mb-4">
           Curso
         </span>
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-6">
@@ -72,14 +68,7 @@ export default function CursoPage({
         </div>
       </section>
 
-      <footer className="border-t border-neutral-800/80 py-10">
-        <div className="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row justify-between gap-4 text-sm text-neutral-500">
-          <span>Â© {new Date().getFullYear()} IGNI</span>
-          <Link href="/" className="hover:text-neutral-300">
-            Volver al inicio
-          </Link>
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
