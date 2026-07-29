@@ -1,3 +1,5 @@
+import { cursos } from "@/lib/cursos";
+
 const niveles = [
   {
     nivel: "Nivel 1",
@@ -13,13 +15,6 @@ const niveles = [
     nivel: "Nivel 3",
     certificado: "Certificado de nivel 3 (ademas de los anteriores)",
     emitido: "Asociacion asignada a ese nivel",
-  },
-];
-
-const cursos = [
-  {
-    nombre: "Fuego y Parrilla",
-    detalle: "Curso de lanzamiento de IGNI. 3 niveles con certificacion dual.",
   },
 ];
 
@@ -197,12 +192,12 @@ export default function Home() {
         <div className="grid sm:grid-cols-2 gap-4">
           {cursos.map((c) => (
             <a
-              key={c.nombre}
-              href="#niveles"
+              key={c.slug}
+              href={`/cursos/${c.slug}`}
               className="rounded-xl border border-neutral-800 bg-neutral-900/60 p-6 hover:border-neutral-600 transition-colors"
             >
               <p className="font-medium text-lg">{c.nombre}</p>
-              <p className="mt-2 text-sm text-neutral-500">{c.detalle}</p>
+              <p className="mt-2 text-sm text-neutral-500">{c.resumen}</p>
             </a>
           ))}
         </div>
