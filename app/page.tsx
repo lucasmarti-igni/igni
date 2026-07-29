@@ -1,97 +1,44 @@
-import { cursos } from "@/lib/cursos";
+import Link from "next/link";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 
-const niveles = [
+const secciones = [
   {
-    nivel: "Nivel 1",
-    certificado: "Certificado de nivel 1",
-    emitido: "Asociacion asignada a ese nivel",
+    nombre: "Quienes somos",
+    href: "/quienes-somos",
+    detalle: "Que es IGNI, valores y objetivos",
   },
   {
-    nivel: "Nivel 2",
-    certificado: "Certificado de nivel 2 (ademas del de nivel 1)",
-    emitido: "Asociacion asignada a ese nivel",
+    nombre: "Autoridades y docentes",
+    href: "/autoridades",
+    detalle: "Direccion y cuerpo docente",
   },
   {
-    nivel: "Nivel 3",
-    certificado: "Certificado de nivel 3 (ademas de los anteriores)",
-    emitido: "Asociacion asignada a ese nivel",
+    nombre: "Los cursos",
+    href: "/cursos",
+    detalle: "Listado y repositorio de cursos",
   },
-];
-
-const proximamente = [
   {
-    nombre: "Maestro Veggie a la Brasa",
-    detalle: "Segundo curso confirmado",
+    nombre: "Niveles y certificacion",
+    href: "/niveles",
+    detalle: "Como funciona la certificacion dual",
   },
-  { nombre: "Pasteleria", detalle: "Proximamente" },
-  { nombre: "Cocina Regional", detalle: "Proximamente" },
-];
-
-const universidades = [
-  { nombre: "NIU", tipo: "Certificacion universitaria" },
-];
-
-const asociaciones = [
-  { nombre: "FELAMS", tipo: "Asociacion profesional" },
-  { nombre: "APC", tipo: "Asociacion profesional" },
-  { nombre: "World BBQ Argentina", tipo: "Asociacion profesional" },
-  { nombre: "Club Parrillero Costa Brava", tipo: "Asociacion profesional" },
-  { nombre: "AEAP", tipo: "Asociacion profesional" },
-  { nombre: "Asociacion Santafesina", tipo: "Asociacion profesional" },
   {
-    nombre: "Asociacion Ecuatoriana de Asadores",
-    tipo: "Asociacion profesional",
+    nombre: "Instituciones",
+    href: "/instituciones",
+    detalle: "Universidad y asociaciones que respaldan a IGNI",
+  },
+  {
+    nombre: "Proximamente",
+    href: "/proximamente",
+    detalle: "Las proximas escuelas de IGNI",
   },
 ];
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <header className="border-b border-neutral-800/80 sticky top-0 bg-neutral-950/90 backdrop-blur z-10">
-        <div className="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
-          <span className="text-xl font-bold tracking-tight">
-            IGNI<span className="text-orange-500">.</span>
-          </span>
-          <nav className="hidden lg:flex gap-7 text-sm text-neutral-300">
-            <a
-              href="#quienes-somos"
-              className="hover:text-white transition-colors"
-            >
-              Quienes somos
-            </a>
-            <a
-              href="#autoridades"
-              className="hover:text-white transition-colors"
-            >
-              Autoridades y docentes
-            </a>
-            <a href="#cursos" className="hover:text-white transition-colors">
-              Los cursos
-            </a>
-            <a href="#niveles" className="hover:text-white transition-colors">
-              Niveles y certificacion
-            </a>
-            <a
-              href="#instituciones"
-              className="hover:text-white transition-colors"
-            >
-              Instituciones
-            </a>
-            <a
-              href="#proximamente"
-              className="hover:text-white transition-colors"
-            >
-              Proximamente
-            </a>
-          </nav>
-          <a
-            href="/alumno"
-            className="text-sm font-medium bg-orange-600 hover:bg-orange-500 transition-colors rounded-full px-4 py-2"
-          >
-            Area de alumno
-          </a>
-        </div>
-      </header>
+      <SiteHeader />
 
       <section className="relative overflow-hidden border-b border-neutral-800/80">
         <div
@@ -116,26 +63,23 @@ export default function Home() {
             acreditada. Un curso, tres niveles, una certificacion dual.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <a
-              href="#niveles"
+            <Link
+              href="/cursos"
               className="bg-orange-600 hover:bg-orange-500 transition-colors font-medium rounded-full px-6 py-3"
             >
               Conoce el curso
-            </a>
-            <a
+            </Link>
+            <Link
               href="/verificar"
               className="border border-neutral-700 hover:border-neutral-500 transition-colors font-medium rounded-full px-6 py-3"
             >
               Verificar un certificado
-            </a>
+            </Link>
           </div>
         </div>
       </section>
 
-      <section
-        id="quienes-somos"
-        className="max-w-5xl mx-auto px-6 py-20 border-b border-neutral-800/80"
-      >
+      <section className="max-w-5xl mx-auto px-6 py-20 border-b border-neutral-800/80">
         <h2 className="text-2xl font-semibold mb-4">Quienes somos</h2>
         <p className="text-neutral-400 max-w-3xl leading-relaxed">
           IGNI es una institucion de formacion profesional dedicada a
@@ -146,186 +90,34 @@ export default function Home() {
           referencia y la de una universidad acreditada, respaldadas por
           convenios firmados y certificados verificables con codigo QR.
         </p>
+        <Link
+          href="/quienes-somos"
+          className="inline-block mt-6 text-sm text-orange-400 hover:text-orange-300 transition-colors"
+        >
+          Conoce mas sobre IGNI â
+        </Link>
       </section>
 
-      <section
-        id="autoridades"
-        className="max-w-5xl mx-auto px-6 py-20 border-b border-neutral-800/80"
-      >
-        <h2 className="text-2xl font-semibold mb-4">
-          Autoridades y docentes
-        </h2>
-        <div className="grid sm:grid-cols-2 gap-4">
-          <div className="rounded-xl border border-neutral-800 bg-neutral-900/40 p-8">
-            <p className="text-xs uppercase tracking-wide text-orange-400 mb-3">
-              Direccion
-            </p>
-            <p className="font-medium text-lg">Monica C. Ramos Molina</p>
-            <p className="mt-2 text-neutral-400 text-sm leading-relaxed">
-              Docente y Tecnico en administracion.
-            </p>
-          </div>
-          <div className="rounded-xl border border-neutral-800 bg-neutral-900/40 p-8">
-            <p className="text-xs uppercase tracking-wide text-orange-400 mb-3">
-              Direccion academica
-            </p>
-            <p className="font-medium text-lg">Lucas Marti Boldrini</p>
-            <p className="mt-2 text-neutral-400 text-sm leading-relaxed">
-              Presidente de AEAP (Asociacion Espanola de Asadores y
-              Parrilleros), Promotor de Marca Pais Argentina y autor de tres
-              libros publicados.
-            </p>
-          </div>
-        </div>
-        <p className="mt-6 text-sm text-neutral-500">
-          El cuerpo docente que dicta cada nivel se suma a esta seccion a
-          medida que se confirma.
-        </p>
-      </section>
-
-      <section id="cursos" className="max-w-5xl mx-auto px-6 py-20">
-        <h2 className="text-2xl font-semibold mb-2">Los cursos</h2>
+      <section className="max-w-5xl mx-auto px-6 py-20">
+        <h2 className="text-2xl font-semibold mb-2">Explora IGNI</h2>
         <p className="text-neutral-400 mb-10 max-w-2xl">
-          Listado de cursos disponibles en IGNI. Cada uno tiene su propio
-          recorrido de niveles y certificacion.
+          Cada seccion tiene su propia pagina.
         </p>
         <div className="grid sm:grid-cols-2 gap-4">
-          {cursos.map((c) => (
-            <a
-              key={c.slug}
-              href={`/cursos/${c.slug}`}
+          {secciones.map((s) => (
+            <Link
+              key={s.href}
+              href={s.href}
               className="rounded-xl border border-neutral-800 bg-neutral-900/60 p-6 hover:border-neutral-600 transition-colors"
             >
-              <p className="font-medium text-lg">{c.nombre}</p>
-              <p className="mt-2 text-sm text-neutral-500">{c.resumen}</p>
-            </a>
+              <p className="font-medium text-lg">{s.nombre}</p>
+              <p className="mt-2 text-sm text-neutral-500">{s.detalle}</p>
+            </Link>
           ))}
         </div>
       </section>
 
-      <section
-        id="niveles"
-        className="max-w-5xl mx-auto px-6 py-20 border-t border-neutral-800/80"
-      >
-        <h2 className="text-2xl font-semibold mb-2">
-          Niveles y certificacion
-        </h2>
-        <p className="text-neutral-400 mb-10 max-w-2xl">
-          Cada certificado incluye un codigo QR de verificacion unico:
-          cualquiera puede escanearlo y confirmar que es autentico en
-          nuestra pagina publica de validacion.
-        </p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {niveles.map((n) => (
-            <div
-              key={n.nivel}
-              className="rounded-xl border border-neutral-800 bg-neutral-900/60 p-6"
-            >
-              <span className="text-xs uppercase tracking-wide text-orange-400">
-                {n.nivel}
-              </span>
-              <p className="mt-3 font-medium">{n.certificado}</p>
-              <p className="mt-2 text-sm text-neutral-500">{n.emitido}</p>
-            </div>
-          ))}
-          <div className="rounded-xl border border-orange-700/60 bg-orange-950/20 p-6">
-            <span className="text-xs uppercase tracking-wide text-orange-400">
-              Los 3 niveles completos
-            </span>
-            <p className="mt-3 font-medium">Certificacion universitaria</p>
-            <p className="mt-2 text-sm text-neutral-500">
-              Emitida por universidad acreditada
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="instituciones"
-        className="max-w-5xl mx-auto px-6 py-20 border-t border-neutral-800/80"
-      >
-        <h2 className="text-2xl font-semibold mb-2">Respaldo institucional</h2>
-        <p className="text-neutral-400 mb-10 max-w-2xl">
-          IGNI emite certificaciones junto a una universidad acreditada y
-          asociaciones profesionales, con convenios firmados que avalan cada
-          nivel del programa.
-        </p>
-
-        <h3 className="text-sm uppercase tracking-wide text-orange-400 mb-4">
-          Universidad
-        </h3>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
-          {universidades.map((u) => (
-            <div
-              key={u.nombre}
-              className="rounded-xl border border-neutral-800 bg-neutral-900/60 p-6"
-            >
-              <p className="font-medium">{u.nombre}</p>
-              <p className="mt-2 text-sm text-neutral-500">{u.tipo}</p>
-            </div>
-          ))}
-        </div>
-
-        <h3 className="text-sm uppercase tracking-wide text-orange-400 mb-4">
-          Asociaciones
-        </h3>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {asociaciones.map((a) => (
-            <div
-              key={a.nombre}
-              className="rounded-xl border border-neutral-800 bg-neutral-900/60 p-6"
-            >
-              <p className="font-medium">{a.nombre}</p>
-              <p className="mt-2 text-sm text-neutral-500">{a.tipo}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section
-        id="proximamente"
-        className="max-w-5xl mx-auto px-6 py-20 border-t border-neutral-800/80"
-      >
-        <h2 className="text-2xl font-semibold mb-2">Proximas escuelas</h2>
-        <p className="text-neutral-400 mb-10 max-w-2xl">
-          IGNI crece de forma progresiva. Estas escuelas ya estan en
-          camino.
-        </p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {proximamente.map((p) => (
-            <div
-              key={p.nombre}
-              className="rounded-xl border border-dashed border-neutral-800 p-6 text-neutral-500"
-            >
-              <p className="font-medium text-neutral-300">{p.nombre}</p>
-              <p className="text-sm mt-1">{p.detalle}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <footer className="border-t border-neutral-800/80 py-10">
-        <div className="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row justify-between gap-4 text-sm text-neutral-500">
-          <span>Â© {new Date().getFullYear()} IGNI</span>
-          <div className="flex gap-6">
-            <a href="/alumno" className="hover:text-neutral-300">
-              Area de alumno
-            </a>
-            <a href="/verificar" className="hover:text-neutral-300">
-              Verificar certificado
-            </a>
-            <a href="#" className="hover:text-neutral-300">
-              Terminos
-            </a>
-            <a href="#" className="hover:text-neutral-300">
-              Privacidad
-            </a>
-            <a href="#" className="hover:text-neutral-300">
-              Contacto
-            </a>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
