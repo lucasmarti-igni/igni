@@ -135,17 +135,27 @@ export default function Home() {
           referencia y la de una universidad acreditada, respaldadas por
           convenios firmados y certificados verificables con codigo QR.
         </p>
-        <div className="rounded-xl border border-neutral-800 bg-neutral-900/40 p-8">
-          <p className="text-xs uppercase tracking-wide text-orange-400 mb-3">
-            Direccion
-          </p>
-          <p className="font-medium text-lg">Lucas Marti Boldrini</p>
-          <p className="mt-2 text-neutral-400 text-sm leading-relaxed max-w-2xl">
-            Presidente de AEAP (Asociacion Espanola de Asadores
-            Profesionales), Embajador de Marca Pais Argentina, autor de dos
-            libros publicados y conductor del programa de radio
-            &quot;Aca Como Alla&quot;.
-          </p>
+        <div className="grid sm:grid-cols-2 gap-4">
+          <div className="rounded-xl border border-neutral-800 bg-neutral-900/40 p-8">
+            <p className="text-xs uppercase tracking-wide text-orange-400 mb-3">
+              Direccion
+            </p>
+            <p className="font-medium text-lg">Monica C. Ramos Molina</p>
+            <p className="mt-2 text-neutral-400 text-sm leading-relaxed">
+              Docente y Tecnico en administracion.
+            </p>
+          </div>
+          <div className="rounded-xl border border-neutral-800 bg-neutral-900/40 p-8">
+            <p className="text-xs uppercase tracking-wide text-orange-400 mb-3">
+              Direccion academica
+            </p>
+            <p className="font-medium text-lg">Lucas Marti Boldrini</p>
+            <p className="mt-2 text-neutral-400 text-sm leading-relaxed">
+              Presidente de AEAP (Asociacion Espanola de Asadores y
+              Parrilleros), Promotor de Marca Pais Argentina y autor de tres
+              libros publicados.
+            </p>
+          </div>
         </div>
       </section>
 
