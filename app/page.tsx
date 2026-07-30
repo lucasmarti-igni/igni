@@ -29,6 +29,11 @@ const secciones = [
     detalle: "Universidad y asociaciones que respaldan a IGNI",
   },
   {
+    nombre: "Tienda",
+    href: "/tienda",
+    detalle: "Recetarios, libros y otros recursos de IGNI",
+  },
+  {
     nombre: "Proximamente",
     href: "/proximamente",
     detalle: "Las proximas escuelas de IGNI",
@@ -94,7 +99,7 @@ export default function Home() {
           href="/quienes-somos"
           className="inline-block mt-6 text-sm text-orange-400 hover:text-orange-300 transition-colors"
         >
-          Conoce mas sobre IGNI â
+          Conoce mas sobre IGNI →
         </Link>
       </section>
 
