@@ -1,14 +1,6 @@
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
-
-const proximamente = [
-  {
-    nombre: "Maestro Veggie a la Brasa",
-    detalle: "Segundo curso confirmado",
-  },
-  { nombre: "Pasteleria", detalle: "Proximamente" },
-  { nombre: "Cocina Regional", detalle: "Proximamente" },
-];
+import { proximamente } from "@/lib/proximamente";
 
 export default function ProximamentePage() {
   return (
@@ -16,11 +8,10 @@ export default function ProximamentePage() {
       <SiteHeader />
       <section className="max-w-5xl mx-auto px-6 py-20">
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4 text-[#2E2A22]">
-          Proximas escuelas
+          Próximamente en IGNI
         </h1>
         <p className="text-[#7A6F5F] mb-10 max-w-2xl">
-          IGNI crece de forma progresiva. Estas escuelas ya estan en
-          camino.
+          IGNI crece de forma progresiva. Estas formaciones ya están en camino.
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {proximamente.map((p) => (
