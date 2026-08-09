@@ -2,19 +2,19 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
 const universidades = [
-  { nombre: "NIU", tipo: "Certificacion universitaria" },
+  { nombre: "NIU", tipo: "Certificación universitaria" },
 ];
 
 const asociaciones = [
-  { nombre: "FELAMS", tipo: "Asociacion profesional" },
-  { nombre: "APC", tipo: "Asociacion profesional" },
-  { nombre: "World BBQ Argentina", tipo: "Asociacion profesional" },
-  { nombre: "Club Parrillero Costa Brava", tipo: "Asociacion profesional" },
-  { nombre: "AEAP", tipo: "Asociacion profesional" },
-  { nombre: "Asociacion Santafesina", tipo: "Asociacion profesional" },
+  { nombre: "FELAMS", tipo: "Asociación profesional" },
+  { nombre: "APC", tipo: "Asociación profesional" },
+  { nombre: "World BBQ Argentina", tipo: "Asociación profesional" },
+  { nombre: "Club Parrillero Costa Brava", tipo: "Asociación profesional" },
+  { nombre: "AEAP", tipo: "Asociación profesional" },
+  { nombre: "Asociación Santafesina", tipo: "Asociación profesional" },
   {
-    nombre: "Asociacion Ecuatoriana de Asadores",
-    tipo: "Asociacion profesional",
+    nombre: "Asociación Ecuatoriana de Asadores",
+    tipo: "Asociación profesional",
   },
 ];
 
