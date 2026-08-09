@@ -12,27 +12,27 @@ export default function AutoridadesPage() {
         <div className="grid sm:grid-cols-2 gap-4">
           <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-8">
             <p className="text-xs uppercase tracking-wide text-[#B8944A] mb-3">
-              Direccion
+              Dirección
             </p>
-            <p className="font-medium text-lg text-[#2E2A22]">Monica C. Ramos Molina</p>
+            <p className="font-medium text-lg text-[#2E2A22]">Mónica Ramos Molina</p>
             <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">
-              Docente y Tecnico en administracion.
+              Docente y técnico en administración.
             </p>
           </div>
           <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-8">
             <p className="text-xs uppercase tracking-wide text-[#B8944A] mb-3">
-              Direccion academica
+              Dirección académica
             </p>
-            <p className="font-medium text-lg text-[#2E2A22]">Lucas Marti Boldrini</p>
+            <p className="font-medium text-lg text-[#2E2A22]">Lucas Martí Boldrini</p>
             <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">
-              Presidente de AEAP (Asociacion Espanola de Asadores y
-              Parrilleros), Promotor de Marca Pais Argentina y autor de tres
+              Presidente y fundador de AEAP (Asociación Española de Asadores y
+              Parrilleros), Promotor de Marca País Argentina y autor de tres
               libros publicados.
             </p>
           </div>
         </div>
         <p className="mt-6 text-sm text-[#8A8070]">
-          El cuerpo docente que dicta cada nivel se suma a esta seccion a
+          El cuerpo docente que dicta cada nivel se suma a esta sección a
           medida que se confirma.
         </p>
       </section>
