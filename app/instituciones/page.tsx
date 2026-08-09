@@ -7,11 +7,11 @@ const universidades = [
 
 const asociaciones = [
   { nombre: "FELAMS", tipo: "Asociación profesional" },
-  { nombre: "APC", tipo: "Asociación profesional" },
+  { nombre: "Asociación de Parrilleros de Coahuila (APC)", tipo: "Asociación profesional" },
   { nombre: "World BBQ Argentina", tipo: "Asociación profesional" },
   { nombre: "Club Parrillero Costa Brava", tipo: "Asociación profesional" },
-  { nombre: "AEAP", tipo: "Asociación profesional" },
-  { nombre: "Asociación Santafesina", tipo: "Asociación profesional" },
+  { nombre: "Asociación Española de Asadores y Parrilleros (AEAP)", tipo: "Asociación profesional" },
+  { nombre: "Asociación Santafesina de Asadores y Afines", tipo: "Asociación profesional" },
   {
     nombre: "Asociación Ecuatoriana de Asadores",
     tipo: "Asociación profesional",
