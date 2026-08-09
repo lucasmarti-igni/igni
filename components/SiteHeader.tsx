@@ -1,13 +1,13 @@
 import Link from "next/link";
 
 const links = [
-  { href: "/quienes-somos", label: "Quienes somos" },
+  { href: "/quienes-somos", label: "Quiénes somos" },
   { href: "/autoridades", label: "Autoridades" },
   { href: "/cursos", label: "Cursos" },
   { href: "/niveles", label: "Niveles" },
   { href: "/instituciones", label: "Instituciones" },
   { href: "/tienda", label: "Tienda" },
-  { href: "/proximamente", label: "Proximamente" },
+  { href: "/proximamente", label: "Próximamente" },
 ];
 
 export default function SiteHeader() {
@@ -52,7 +52,7 @@ export default function SiteHeader() {
           href="/alumno"
           className="text-sm font-medium bg-[#B8944A] hover:bg-[#A6803D] text-[#F6EFE7] transition-colors rounded-full px-4 py-2 shrink-0 whitespace-nowrap"
         >
-          Area de alumno
+          Área de alumno
         </Link>
       </div>
     </header>
