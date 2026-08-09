@@ -4,14 +4,14 @@ import SiteFooter from "@/components/SiteFooter";
 
 const secciones = [
   {
-    nombre: "Quienes somos",
+    nombre: "Quiénes somos",
     href: "/quienes-somos",
-    detalle: "Que es IGNI, valores y objetivos",
+    detalle: "Qué es IGNI, valores y objetivos",
   },
   {
     nombre: "Autoridades y docentes",
     href: "/autoridades",
-    detalle: "Direccion y cuerpo docente",
+    detalle: "Dirección y cuerpo docente",
   },
   {
     nombre: "Los cursos",
@@ -19,9 +19,9 @@ const secciones = [
     detalle: "Listado y repositorio de cursos",
   },
   {
-    nombre: "Niveles y certificacion",
+    nombre: "Niveles y certificación",
     href: "/niveles",
-    detalle: "Como funciona la certificacion dual",
+    detalle: "Cómo funciona la certificación dual",
   },
   {
     nombre: "Instituciones",
@@ -34,9 +34,9 @@ const secciones = [
     detalle: "Recetarios, libros y otros recursos de IGNI",
   },
   {
-    nombre: "Proximamente",
+    nombre: "Próximamente",
     href: "/proximamente",
-    detalle: "Las proximas escuelas de IGNI",
+    detalle: "Las próximas escuelas de IGNI",
   },
 ];
 
@@ -48,24 +48,24 @@ export default function Home() {
       <section className="relative overflow-hidden border-b border-[#E4D9C8]">
         <div className="relative max-w-3xl mx-auto px-6 py-24 text-center">
           <span className="inline-block text-xs uppercase tracking-[0.18em] text-[#B8944A] mb-4">
-            Certificacion profesional dual
+            Certificación profesional dual
           </span>
           <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-6 text-[#2E2A22]">
             La misma exigencia de las grandes escuelas de cocina, sin
             salir de tu casa
           </h1>
           <p className="text-[#7A6F5F] max-w-xl mx-auto mb-10 text-lg leading-relaxed">
-            IGNI certifica tecnica, producto y pensamiento culinario con el
-            aval conjunto de una universidad acreditada y una asociacion
-            profesional del sector, verificable con codigo QR, cien por
-            ciento online y en espanol.
+            IGNI certifica técnica, producto y pensamiento culinario con el
+            aval conjunto de una universidad acreditada y una asociación
+            profesional del sector, verificable con código QR, cien por
+            ciento online y en español.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/cursos"
               className="bg-[#B8944A] hover:bg-[#A6803D] text-[#F6EFE7] transition-colors font-medium rounded-full px-6 py-3"
             >
-              Empeza tu certificacion
+              Empezá tu certificación
             </Link>
             <Link
               href="/verificar"
@@ -79,29 +79,29 @@ export default function Home() {
 
       <section className="max-w-5xl mx-auto px-6 py-20 border-b border-[#E4D9C8]">
         <h2 className="text-2xl font-semibold mb-4 text-[#2E2A22]">
-          Quienes somos
+          Quiénes somos
         </h2>
         <p className="text-[#7A6F5F] max-w-3xl leading-relaxed">
-          IGNI es una escuela de oficio, tecnica y pensamiento culinario. No
-          ensenamos recetas sueltas, formamos criterio y rigor profesional,
+          IGNI es una escuela de oficio, técnica y pensamiento culinario. No
+          enseñamos recetas sueltas, formamos criterio y rigor profesional,
           con programas certificados en conjunto por una universidad
-          acreditada y una asociacion profesional del sector, verificable
-          con codigo QR. Empezamos por el fuego, pero no nos quedamos ahi.
+          acreditada y una asociación profesional del sector, verificable
+          con código QR. Empezamos por el fuego, pero no nos quedamos ahí.
         </p>
         <Link
           href="/quienes-somos"
           className="inline-block mt-6 text-sm text-[#B8944A] hover:text-[#A6803D] transition-colors"
         >
-          Conoce mas sobre IGNI →
+          Conocé más sobre IGNI →
         </Link>
       </section>
 
       <section className="max-w-5xl mx-auto px-6 py-20">
         <h2 className="text-2xl font-semibold mb-2 text-[#2E2A22]">
-          Explora IGNI
+          Explorá IGNI
         </h2>
         <p className="text-[#7A6F5F] mb-10 max-w-2xl">
-          Cada seccion tiene su propia pagina.
+          Cada sección tiene su propia página.
         </p>
         <div className="grid sm:grid-cols-2 gap-4">
           {secciones.map((s) => (
@@ -121,10 +121,10 @@ export default function Home() {
 
       <section className="max-w-5xl mx-auto px-6 py-20 border-t border-[#E4D9C8]">
         <h2 className="text-2xl font-semibold mb-2 text-[#2E2A22]">
-          Donde estas hoy?
+          ¿Dónde estás hoy?
         </h2>
         <p className="text-[#7A6F5F] mb-10 max-w-2xl">
-          Elegi tu punto de partida.
+          Elegí tu punto de partida.
         </p>
         <div className="grid sm:grid-cols-2 gap-4">
           <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-6">
@@ -135,13 +135,13 @@ export default function Home() {
               Nivel Inicial, 169 euros
             </p>
             <p className="text-sm text-[#8A8070] mb-4">
-              Construi tus bases con metodo y criterio.
+              Construí tus bases con método y criterio.
             </p>
             <Link
               href="/niveles"
               className="text-sm text-[#B8944A] hover:text-[#A6803D] transition-colors"
             >
-              Empezar por aca →
+              Empezar por acá →
             </Link>
           </div>
           <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-6">
@@ -152,7 +152,7 @@ export default function Home() {
               Nivel Avanzado, 375 euros
             </p>
             <p className="text-sm text-[#8A8070] mb-4">
-              Lleva la tecnica a un nivel de aplicacion profesional.
+              Llevá la técnica a un nivel de aplicación profesional.
             </p>
             <Link
               href="/niveles"
@@ -169,7 +169,7 @@ export default function Home() {
               Nivel Experto, 499 euros
             </p>
             <p className="text-sm text-[#8A8070] mb-4">
-              Profundiza en el dominio tecnico y conceptual.
+              Profundizá en el dominio técnico y conceptual.
             </p>
             <Link
               href="/niveles"
