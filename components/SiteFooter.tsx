@@ -6,21 +6,11 @@ export default function SiteFooter() {
       <div className="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row justify-between gap-4 text-sm text-[#8A8070]">
         <span>© {new Date().getFullYear()} IGNI</span>
         <div className="flex gap-6">
-          <Link href="/alumno" className="hover:text-[#2E2A22]">
-            Área de alumno
-          </Link>
-          <Link href="/verificar" className="hover:text-[#2E2A22]">
-            Verificar certificado
-          </Link>
-          <Link href="#" className="hover:text-[#2E2A22]">
-            Términos
-          </Link>
-          <Link href="#" className="hover:text-[#2E2A22]">
-            Privacidad
-          </Link>
-          <Link href="#" className="hover:text-[#2E2A22]">
-            Contacto
-          </Link>
+          <Link href="/alumno" className="hover:text-[#2E2A22]">Área de alumno</Link>
+          <Link href="/verificar" className="hover:text-[#2E2A22]">Verificar certificado</Link>
+          <Link href="/terminos" className="hover:text-[#2E2A22]">Términos</Link>
+          <Link href="/privacidad" className="hover:text-[#2E2A22]">Privacidad</Link>
+          <Link href="/contacto" className="hover:text-[#2E2A22]">Contacto</Link>
         </div>
       </div>
     </footer>
