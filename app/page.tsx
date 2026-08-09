@@ -36,7 +36,7 @@ const secciones = [
   {
     nombre: "Próximamente",
     href: "/proximamente",
-    detalle: "Las próximas escuelas de IGNI",
+    detalle: "Las próximas formaciones de IGNI",
   },
 ];
 
@@ -82,11 +82,10 @@ export default function Home() {
           Quiénes somos
         </h2>
         <p className="text-[#7A6F5F] max-w-3xl leading-relaxed">
-          IGNI es una escuela de oficio, técnica y pensamiento culinario. No
-          enseñamos recetas sueltas, formamos criterio y rigor profesional,
-          con programas certificados en conjunto por una universidad
-          acreditada y una asociación profesional del sector, verificable
-          con código QR. Empezamos por el fuego, pero no nos quedamos ahí.
+          IGNI es una escuela de oficio, técnica y pensamiento culinario.
+          Formamos criterio y rigor profesional, con programas certificados
+          en conjunto por una universidad acreditada y una asociación
+          profesional del sector, verificable con código QR.
         </p>
         <Link
           href="/quienes-somos"
