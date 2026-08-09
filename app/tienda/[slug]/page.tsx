@@ -22,32 +22,32 @@ export default function ProductoPage({
   }
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-[#F6EFE7] text-[#2E2A22]">
       <SiteHeader />
       <section className="max-w-5xl mx-auto px-6 py-16">
         <Link
           href="/tienda"
-          className="text-sm text-neutral-400 hover:text-neutral-200 transition-colors"
+          className="text-sm text-[#8A8070] hover:text-[#2E2A22] transition-colors"
         >
-          â Volver a la tienda
+          ← Volver a la tienda
         </Link>
-        <span className="block mt-6 text-xs uppercase tracking-[0.2em] text-orange-400 mb-4">
+        <span className="block mt-6 text-xs uppercase tracking-[0.2em] text-[#B8944A] mb-4">
           {producto.tipo === "digital" ? "Producto digital" : "Producto fisico"}
         </span>
-        <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-6">
+        <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-6 text-[#2E2A22]">
           {producto.nombre}
         </h1>
-        <p className="text-neutral-400 max-w-2xl leading-relaxed mb-6">
+        <p className="text-[#7A6F5F] max-w-2xl leading-relaxed mb-6">
           {producto.descripcion}
         </p>
-        <p className="text-2xl font-semibold mb-8">
+        <p className="text-2xl font-semibold mb-8 text-[#2E2A22]">
           {producto.precio !== null
             ? `${producto.precio} ${producto.moneda}`
             : "Precio a confirmar"}
         </p>
         <button
           disabled
-          className="cursor-not-allowed rounded-full border border-neutral-700 px-6 py-3 font-medium text-neutral-500"
+          className="cursor-not-allowed rounded-full border border-[#A9AEB2] px-6 py-3 font-medium text-[#8A8070]"
         >
           Comprar (proximamente)
         </button>
