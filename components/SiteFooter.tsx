@@ -7,13 +7,13 @@ export default function SiteFooter() {
         <span>© {new Date().getFullYear()} IGNI</span>
         <div className="flex gap-6">
           <Link href="/alumno" className="hover:text-[#2E2A22]">
-            Area de alumno
+            Área de alumno
           </Link>
           <Link href="/verificar" className="hover:text-[#2E2A22]">
             Verificar certificado
           </Link>
           <Link href="#" className="hover:text-[#2E2A22]">
-            Terminos
+            Términos
           </Link>
           <Link href="#" className="hover:text-[#2E2A22]">
             Privacidad
