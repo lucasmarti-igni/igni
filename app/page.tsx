@@ -52,19 +52,20 @@ export default function Home() {
           </span>
           <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-6 text-[#2E2A22]">
             La misma exigencia de las grandes escuelas de cocina, sin
-            mudarte de pais ni gastar una fortuna
+            salir de tu casa
           </h1>
           <p className="text-[#7A6F5F] max-w-xl mx-auto mb-10 text-lg leading-relaxed">
             IGNI certifica tecnica, producto y pensamiento culinario con el
             aval conjunto de una universidad acreditada y una asociacion
-            profesional del sector, cien por ciento online y en espanol.
+            profesional del sector, verificable con codigo QR, cien por
+            ciento online y en espanol.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/cursos"
               className="bg-[#B8944A] hover:bg-[#A6803D] text-[#F6EFE7] transition-colors font-medium rounded-full px-6 py-3"
             >
-              Ver cursos
+              Empeza tu certificacion
             </Link>
             <Link
               href="/verificar"
@@ -83,10 +84,9 @@ export default function Home() {
         <p className="text-[#7A6F5F] max-w-3xl leading-relaxed">
           IGNI es una escuela de oficio, tecnica y pensamiento culinario. No
           ensenamos recetas sueltas, formamos criterio y rigor profesional,
-          con programas que van desde la tecnica inicial hasta
-          certificaciones de nivel superior avaladas por una universidad y
-          una asociacion del sector. Empezamos por el fuego, pero no nos
-          quedamos ahi.
+          con programas certificados en conjunto por una universidad
+          acreditada y una asociacion profesional del sector, verificable
+          con codigo QR. Empezamos por el fuego, pero no nos quedamos ahi.
         </p>
         <Link
           href="/quienes-somos"
@@ -116,6 +116,85 @@ export default function Home() {
               <p className="mt-2 text-sm text-[#8A8070]">{s.detalle}</p>
             </Link>
           ))}
+        </div>
+      </section>
+
+      <section className="max-w-5xl mx-auto px-6 py-20 border-t border-[#E4D9C8]">
+        <h2 className="text-2xl font-semibold mb-2 text-[#2E2A22]">
+          Donde estas hoy?
+        </h2>
+        <p className="text-[#7A6F5F] mb-10 max-w-2xl">
+          Elegi tu punto de partida.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4">
+          <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-6">
+            <p className="text-xs uppercase tracking-[0.14em] text-[#B8944A] mb-2">
+              Quiero empezar
+            </p>
+            <p className="font-medium text-lg text-[#2E2A22] mb-1">
+              Nivel Inicial, 169 euros
+            </p>
+            <p className="text-sm text-[#8A8070] mb-4">
+              Construi tus bases con metodo y criterio.
+            </p>
+            <Link
+              href="/niveles"
+              className="text-sm text-[#B8944A] hover:text-[#A6803D] transition-colors"
+            >
+              Empezar por aca →
+            </Link>
+          </div>
+          <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-6">
+            <p className="text-xs uppercase tracking-[0.14em] text-[#B8944A] mb-2">
+              Ya tengo experiencia
+            </p>
+            <p className="font-medium text-lg text-[#2E2A22] mb-1">
+              Nivel Avanzado, 375 euros
+            </p>
+            <p className="text-sm text-[#8A8070] mb-4">
+              Lleva la tecnica a un nivel de aplicacion profesional.
+            </p>
+            <Link
+              href="/niveles"
+              className="text-sm text-[#B8944A] hover:text-[#A6803D] transition-colors"
+            >
+              Subir de nivel →
+            </Link>
+          </div>
+          <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-6">
+            <p className="text-xs uppercase tracking-[0.14em] text-[#B8944A] mb-2">
+              Quiero especializarme
+            </p>
+            <p className="font-medium text-lg text-[#2E2A22] mb-1">
+              Nivel Experto, 499 euros
+            </p>
+            <p className="text-sm text-[#8A8070] mb-4">
+              Profundiza en el dominio tecnico y conceptual.
+            </p>
+            <Link
+              href="/niveles"
+              className="text-sm text-[#B8944A] hover:text-[#A6803D] transition-colors"
+            >
+              Ir al nivel experto →
+            </Link>
+          </div>
+          <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-6">
+            <p className="text-xs uppercase tracking-[0.14em] text-[#B8944A] mb-2">
+              Quiero el recorrido completo
+            </p>
+            <p className="font-medium text-lg text-[#2E2A22] mb-1">
+              Los tres niveles juntos, 965 euros
+            </p>
+            <p className="text-sm text-[#8A8070] mb-4">
+              El camino entero, de inicial a experto, en un solo pack.
+            </p>
+            <Link
+              href="/niveles"
+              className="text-sm text-[#B8944A] hover:text-[#A6803D] transition-colors"
+            >
+              Ver el programa completo →
+            </Link>
+          </div>
         </div>
       </section>
 
