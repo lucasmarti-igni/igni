@@ -13,7 +13,7 @@ export default function CursosPage() {
         </h1>
         <p className="text-[#7A6F5F] mb-10 max-w-2xl">
           Listado de cursos disponibles en IGNI. Cada uno tiene su propio
-          recorrido de niveles y certificacion.
+          recorrido de niveles y certificación.
         </p>
         <div className="grid sm:grid-cols-2 gap-4">
           {cursos.map((c) => (
