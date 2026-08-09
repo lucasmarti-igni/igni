@@ -12,17 +12,37 @@ const links = [
 
 export default function SiteHeader() {
   return (
-    <header className="border-b border-neutral-800/80 sticky top-0 bg-neutral-950/90 backdrop-blur z-10">
-      <div className="max-w-7xl mx-auto flex items-center justify-between gap-6 px-6 py-4">
-        <Link href="/" className="text-xl font-bold tracking-tight shrink-0">
-          IGNI<span className="text-orange-500">.</span>
+    <header className="border-b border-[#E4D9C8] sticky top-0 bg-[#F6EFE7]/95 backdrop-blur z-10">
+      <div className="max-w-7xl mx-auto flex items-center justify-between gap-6 px-6 py-3">
+        <Link href="/" className="shrink-0 flex items-center">
+          <div
+            style={{
+              height: "44px",
+              width: "77.7px",
+              overflow: "hidden",
+              position: "relative",
+            }}
+          >
+            <img
+              src="/logo%20igni%20dorado%20y%20plata%20fondo%20crema.jpeg"
+              alt="IGNI"
+              style={{
+                position: "absolute",
+                height: "57.85px",
+                width: "92.28px",
+                left: "-7.67px",
+                top: "-8.63px",
+                maxWidth: "none",
+              }}
+            />
+          </div>
         </Link>
-        <nav className="hidden lg:flex items-center gap-5 text-sm text-neutral-300 whitespace-nowrap overflow-x-auto">
+        <nav className="hidden lg:flex items-center gap-5 text-sm text-[#7A6F5F] whitespace-nowrap overflow-x-auto">
           {links.map((l) => (
             <Link
               key={l.href}
               href={l.href}
-              className="hover:text-white transition-colors"
+              className="hover:text-[#2E2A22] transition-colors"
             >
               {l.label}
             </Link>
@@ -30,7 +50,7 @@ export default function SiteHeader() {
         </nav>
         <Link
           href="/alumno"
-          className="text-sm font-medium bg-orange-600 hover:bg-orange-500 transition-colors rounded-full px-4 py-2 shrink-0 whitespace-nowrap"
+          className="text-sm font-medium bg-[#B8944A] hover:bg-[#A6803D] text-[#F6EFE7] transition-colors rounded-full px-4 py-2 shrink-0 whitespace-nowrap"
         >
           Area de alumno
         </Link>
