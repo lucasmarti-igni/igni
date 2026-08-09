@@ -42,41 +42,33 @@ const secciones = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-[#F6EFE7] text-[#2E2A22]">
       <SiteHeader />
 
-      <section className="relative overflow-hidden border-b border-neutral-800/80">
-        <div
-          className="absolute inset-0 opacity-40"
-          style={{
-            background:
-              "radial-gradient(circle at 50% 0%, rgba(234,88,12,0.25), transparent 60%)",
-          }}
-        />
-        <div className="relative max-w-5xl mx-auto px-6 py-24 text-center">
-          <span className="inline-block text-xs uppercase tracking-[0.2em] text-orange-400 mb-4">
-            Escuela I - Fuego y Parrilla
+      <section className="relative overflow-hidden border-b border-[#E4D9C8]">
+        <div className="relative max-w-3xl mx-auto px-6 py-24 text-center">
+          <span className="inline-block text-xs uppercase tracking-[0.18em] text-[#B8944A] mb-4">
+            Certificacion profesional dual
           </span>
-          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight mb-6">
-            Certificacion profesional
-            <br />
-            del oficio del fuego
+          <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-6 text-[#2E2A22]">
+            La misma exigencia de las grandes escuelas de cocina, sin
+            mudarte de pais ni gastar una fortuna
           </h1>
-          <p className="text-neutral-400 max-w-2xl mx-auto mb-10 text-lg">
-            IGNI certifica a quienes se forman en el oficio del fuego junto a
-            asociaciones profesionales de referencia y una universidad
-            acreditada. Un curso, tres niveles, una certificacion dual.
+          <p className="text-[#7A6F5F] max-w-xl mx-auto mb-10 text-lg leading-relaxed">
+            IGNI certifica tecnica, producto y pensamiento culinario con el
+            aval conjunto de una universidad acreditada y una asociacion
+            profesional del sector, cien por ciento online y en espanol.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/cursos"
-              className="bg-orange-600 hover:bg-orange-500 transition-colors font-medium rounded-full px-6 py-3"
+              className="bg-[#B8944A] hover:bg-[#A6803D] text-[#F6EFE7] transition-colors font-medium rounded-full px-6 py-3"
             >
-              Conoce el curso
+              Ver cursos
             </Link>
             <Link
               href="/verificar"
-              className="border border-neutral-700 hover:border-neutral-500 transition-colors font-medium rounded-full px-6 py-3"
+              className="border border-[#A9AEB2] text-[#5C5648] hover:border-[#7A6F5F] transition-colors font-medium rounded-full px-6 py-3"
             >
               Verificar un certificado
             </Link>
@@ -84,28 +76,31 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-5xl mx-auto px-6 py-20 border-b border-neutral-800/80">
-        <h2 className="text-2xl font-semibold mb-4">Quienes somos</h2>
-        <p className="text-neutral-400 max-w-3xl leading-relaxed">
-          IGNI es una institucion de formacion profesional dedicada a
-          certificar los oficios del fuego. Nace con una escuela, Fuego y
-          Parrilla, y crece de forma progresiva hacia nuevas escuelas y
-          especialidades. Nuestro modelo combina contenido practico con una
-          doble certificacion: la de una asociacion profesional de
-          referencia y la de una universidad acreditada, respaldadas por
-          convenios firmados y certificados verificables con codigo QR.
+      <section className="max-w-5xl mx-auto px-6 py-20 border-b border-[#E4D9C8]">
+        <h2 className="text-2xl font-semibold mb-4 text-[#2E2A22]">
+          Quienes somos
+        </h2>
+        <p className="text-[#7A6F5F] max-w-3xl leading-relaxed">
+          IGNI es una escuela de oficio, tecnica y pensamiento culinario. No
+          ensenamos recetas sueltas, formamos criterio y rigor profesional,
+          con programas que van desde la tecnica inicial hasta
+          certificaciones de nivel superior avaladas por una universidad y
+          una asociacion del sector. Empezamos por el fuego, pero no nos
+          quedamos ahi.
         </p>
         <Link
           href="/quienes-somos"
-          className="inline-block mt-6 text-sm text-orange-400 hover:text-orange-300 transition-colors"
+          className="inline-block mt-6 text-sm text-[#B8944A] hover:text-[#A6803D] transition-colors"
         >
           Conoce mas sobre IGNI →
         </Link>
       </section>
 
       <section className="max-w-5xl mx-auto px-6 py-20">
-        <h2 className="text-2xl font-semibold mb-2">Explora IGNI</h2>
-        <p className="text-neutral-400 mb-10 max-w-2xl">
+        <h2 className="text-2xl font-semibold mb-2 text-[#2E2A22]">
+          Explora IGNI
+        </h2>
+        <p className="text-[#7A6F5F] mb-10 max-w-2xl">
           Cada seccion tiene su propia pagina.
         </p>
         <div className="grid sm:grid-cols-2 gap-4">
@@ -113,10 +108,12 @@ export default function Home() {
             <Link
               key={s.href}
               href={s.href}
-              className="rounded-xl border border-neutral-800 bg-neutral-900/60 p-6 hover:border-neutral-600 transition-colors"
+              className="rounded-xl border border-[#E4D9C8] bg-white/40 p-6 hover:border-[#B8944A] transition-colors"
             >
-              <p className="font-medium text-lg">{s.nombre}</p>
-              <p className="mt-2 text-sm text-neutral-500">{s.detalle}</p>
+              <p className="font-medium text-lg text-[#2E2A22]">
+                {s.nombre}
+              </p>
+              <p className="mt-2 text-sm text-[#8A8070]">{s.detalle}</p>
             </Link>
           ))}
         </div>
