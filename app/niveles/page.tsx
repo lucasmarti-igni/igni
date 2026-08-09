@@ -16,17 +16,18 @@ const niveles = [
     nivel: "Nivel 3",
     certificado: "Certificado de nivel 3 (ademas de los anteriores)",
     emitido: "Asociacion asignada a ese nivel",
-  },	];
+  },
+];
 
 export default function NivelesPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-[#F6EFE7] text-[#2E2A22]">
       <SiteHeader />
       <section className="max-w-5xl mx-auto px-6 py-20">
-        <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4">
+        <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4 text-[#2E2A22]">
           Niveles y certificacion
         </h1>
-        <p className="text-neutral-400 mb-10 max-w-2xl">
+        <p className="text-[#7A6F5F] mb-10 max-w-2xl">
           Cada certificado incluye un codigo QR de verificacion unico:
           cualquiera puede escanearlo y confirmar que es autentico en
           nuestra pagina publica de validacion.
@@ -35,21 +36,21 @@ export default function NivelesPage() {
           {niveles.map((n) => (
             <div
               key={n.nivel}
-              className="rounded-xl border border-neutral-800 bg-neutral-900/60 p-6"
+              className="rounded-xl border border-[#E4D9C8] bg-white/40 p-6"
             >
-              <span className="text-xs uppercase tracking-wide text-orange-400">
+              <span className="text-xs uppercase tracking-wide text-[#B8944A]">
                 {n.nivel}
               </span>
-              <p className="mt-3 font-medium">{n.certificado}</p>
-              <p className="mt-2 text-sm text-neutral-500">{n.emitido}</p>
+              <p className="mt-3 font-medium text-[#2E2A22]">{n.certificado}</p>
+              <p className="mt-2 text-sm text-[#8A8070]">{n.emitido}</p>
             </div>
           ))}
-          <div className="rounded-xl border border-orange-700/60 bg-orange-950/20 p-6">
-            <span className="text-xs uppercase tracking-wide text-orange-400">
+          <div className="rounded-xl border border-[#B8944A]/60 bg-[#B8944A]/10 p-6">
+            <span className="text-xs uppercase tracking-wide text-[#B8944A]">
               Los 3 niveles completos
             </span>
-            <p className="mt-3 font-medium">Certificacion universitaria</p>
-            <p className="mt-2 text-sm text-neutral-500">
+            <p className="mt-3 font-medium text-[#2E2A22]">Certificacion universitaria</p>
+            <p className="mt-2 text-sm text-[#8A8070]">
               Emitida por universidad acreditada
             </p>
           </div>
