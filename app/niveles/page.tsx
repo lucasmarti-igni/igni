@@ -3,19 +3,19 @@ import SiteFooter from "@/components/SiteFooter";
 
 const niveles = [
   {
-    nivel: "Nivel 1",
-    certificado: "Certificado de nivel 1",
-    emitido: "Asociacion asignada a ese nivel",
+    nivel: "Nivel Inicial",
+    certificado: "Certificado de Nivel Inicial",
+    emitido: "Asociación asignada a ese nivel",
   },
   {
-    nivel: "Nivel 2",
-    certificado: "Certificado de nivel 2 (ademas del de nivel 1)",
-    emitido: "Asociacion asignada a ese nivel",
+    nivel: "Nivel Avanzado",
+    certificado: "Certificado de Nivel Avanzado (además del de Nivel Inicial)",
+    emitido: "Asociación asignada a ese nivel",
   },
   {
-    nivel: "Nivel 3",
-    certificado: "Certificado de nivel 3 (ademas de los anteriores)",
-    emitido: "Asociacion asignada a ese nivel",
+    nivel: "Nivel Experto",
+    certificado: "Certificado de Nivel Experto (además de los anteriores)",
+    emitido: "Asociación asignada a ese nivel",
   },
 ];
 
@@ -25,12 +25,12 @@ export default function NivelesPage() {
       <SiteHeader />
       <section className="max-w-5xl mx-auto px-6 py-20">
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4 text-[#2E2A22]">
-          Niveles y certificacion
+          Niveles y certificación
         </h1>
         <p className="text-[#7A6F5F] mb-10 max-w-2xl">
-          Cada certificado incluye un codigo QR de verificacion unico:
-          cualquiera puede escanearlo y confirmar que es autentico en
-          nuestra pagina publica de validacion.
+          Cada certificado incluye un código QR de verificación único.
+          Cualquiera puede escanearlo para confirmar que es auténtico en
+          nuestra página pública de validación.
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {niveles.map((n) => (
@@ -49,7 +49,7 @@ export default function NivelesPage() {
             <span className="text-xs uppercase tracking-wide text-[#B8944A]">
               Los 3 niveles completos
             </span>
-            <p className="mt-3 font-medium text-[#2E2A22]">Certificacion universitaria</p>
+            <p className="mt-3 font-medium text-[#2E2A22]">Certificación universitaria</p>
             <p className="mt-2 text-sm text-[#8A8070]">
               Emitida por universidad acreditada
             </p>
