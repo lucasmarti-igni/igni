@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+
+export const metadata: Metadata = {
+  title: "Términos y condiciones | IGNI",
+  description:
+    "Términos y condiciones de uso del sitio web y los servicios de formación online de IGNI.",
+};
 
 export default function TerminosPage() {
   return (
