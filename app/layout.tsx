@@ -5,9 +5,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "IGNI | Certificacion profesional del oficio del fuego",
+  title: "IGNI | Certificación culinaria profesional online y en español",
   description:
-    "IGNI certifica a profesionales del oficio del fuego junto a asociaciones referentes y universidad acreditada. Escuela I: Fuego y Parrilla.",
+    "IGNI certifica técnica, producto y pensamiento culinario junto a una universidad acreditada y una asociación profesional del sector, verificable con código QR. Cien por ciento online y en español.",
 };
 
 export default function RootLayout({
