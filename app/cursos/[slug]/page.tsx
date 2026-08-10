@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { cursos } from "@/lib/cursos";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
@@ -8,6 +9,19 @@ export const dynamic = "force-static";
 
 export function generateStaticParams() {
   return cursos.map((c) => ({ slug: c.slug }));
+}
+
+export function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Metadata {
+  const curso = cursos.find((c) => c.slug === params.slug);
+  if (!curso) return {};
+  return {
+    title: `${curso.nombre} | IGNI`,
+    description: curso.resumen,
+  };
 }
 
 export default function CursoPage({
@@ -45,12 +59,12 @@ export default function CursoPage({
 
       <section className="max-w-5xl mx-auto px-6 py-16 border-t border-[#E4D9C8]">
         <h2 className="text-2xl font-semibold mb-2 text-[#2E2A22]">
-          Que se aprende en cada nivel
+          ¿Dónde estás hoy?
         </h2>
         <p className="text-[#7A6F5F] mb-10 max-w-2xl">
-          Cada nivel completado suma un certificado propio.
+          Elegí tu punto de partida. Cada nivel suma un certificado propio.
         </p>
-        <div className="grid gap-4">
+        <div className="grid sm:grid-cols-2 gap-4">
           {curso.niveles.map((n) => (
             <div
               key={n.nivel}
@@ -63,6 +77,11 @@ export default function CursoPage({
               <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">
                 {n.aprendizajes}
               </p>
+              {n.precio !== null && (
+                <p className="mt-3 text-sm text-[#B8944A] font-medium">
+                  {n.precio} {n.moneda}
+                </p>
+              )}
             </div>
           ))}
         </div>
