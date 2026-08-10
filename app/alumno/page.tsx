@@ -81,24 +81,24 @@ export default function Alumno() {
           >
             ← Volver al inicio
           </a>
-          <h1 className="text-2xl font-semibold mt-6 mb-2 text-[#2E2A22]">Area de alumno</h1>
+          <h1 className="text-2xl font-semibold mt-6 mb-2 text-[#2E2A22]">Área de alumno</h1>
           <p className="text-[#7A6F5F] text-sm mb-8">
-            Sesion iniciada como <span className="text-[#2E2A22]">{session.user.email}</span>.
+            Sesión iniciada como <span className="text-[#2E2A22]">{session.user.email}</span>.
           </p>
           <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-6 mb-6">
             <p className="text-xs uppercase tracking-wide text-[#B8944A] mb-2">
               Tus cursos
             </p>
             <p className="text-sm text-[#8A8070]">
-              Todavia no hay cursos ni certificados cargados a tu cuenta. Esta
-              seccion se activa con el lanzamiento del curso.
+              Todavía no hay cursos ni certificados cargados a tu cuenta. Esta
+              sección se activa con el lanzamiento del curso.
             </p>
           </div>
           <button
             onClick={handleLogout}
             className="w-full border border-[#A9AEB2] text-[#5C5648] hover:border-[#7A6F5F] transition-colors font-medium rounded-full px-6 py-3"
           >
-            Cerrar sesion
+            Cerrar sesión
           </button>
         </div>
       </main>
@@ -114,10 +114,10 @@ export default function Alumno() {
         >
           ← Volver al inicio
         </a>
-        <h1 className="text-2xl font-semibold mt-6 mb-2 text-[#2E2A22]">Area de alumno</h1>
+        <h1 className="text-2xl font-semibold mt-6 mb-2 text-[#2E2A22]">Área de alumno</h1>
         <p className="text-[#7A6F5F] text-sm mb-8">
-          Aca vas a poder acceder a tus cursos, tu progreso por nivel y tus
-          certificados con codigo QR de verificacion.
+          Acá vas a poder acceder a tus cursos, tu progreso por nivel y tus
+          certificados con código QR de verificación.
         </p>
 
         <div className="flex gap-2 mb-6 text-sm">
@@ -184,7 +184,7 @@ export default function Alumno() {
           </div>
           <div>
             <label className="block text-sm text-[#7A6F5F] mb-1">
-              Contrasena
+              Contraseña
             </label>
             <input
               type="password"
