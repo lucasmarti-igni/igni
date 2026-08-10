@@ -27,7 +27,7 @@ export default function QuienesSomosPage() {
             asociación profesional del sector, verificable con código QR.
           </p>
           <p>
-            Empezamos por el fuego, con Fuego y Parrilla como primera
+            Empezamos por el fuego, con Parrilla y Fuego como primera
             formación, pero el proyecto sigue creciendo hacia otras áreas
             de la cocina.
           </p>
