@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+
+export const metadata: Metadata = {
+  title: "Niveles y certificación | IGNI",
+  description:
+    "Tres niveles, cada uno con certificado propio verificable con código QR, hasta llegar a la certificación universitaria completa.",
+};
 
 const niveles = [
   {
