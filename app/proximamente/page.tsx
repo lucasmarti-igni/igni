@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { proximamente } from "@/lib/proximamente";
+
+export const metadata: Metadata = {
+  title: "Próximamente | IGNI",
+  description:
+    "Las próximas formaciones de IGNI: Maestro Veggie a la Brasa, Pastelería y Cocina Regional.",
+};
 
 export default function ProximamentePage() {
   return (
