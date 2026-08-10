@@ -14,14 +14,14 @@ export default function AutoridadesPage() {
             <p className="text-xs uppercase tracking-wide text-[#B8944A] mb-3">
               Dirección
             </p>
-            <p className="font-medium text-lg text-[#2E2A22]">Mónica Ramos Molina</p>
+            <p className="font-medium text-lg text-[#2E2A22]">Mónica Ramos</p>
             <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">
               Docente y técnico en administración.
             </p>
           </div>
           <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-8">
             <p className="text-xs uppercase tracking-wide text-[#B8944A] mb-3">
-              Dirección académica
+              Dirección académica y docente de Fuego y Parrilla
             </p>
             <p className="font-medium text-lg text-[#2E2A22]">Lucas Martí Boldrini</p>
             <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">
