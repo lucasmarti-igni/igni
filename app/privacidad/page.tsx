@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+
+export const metadata: Metadata = {
+  title: "Política de privacidad | IGNI",
+  description:
+    "Cómo IGNI recoge, usa y protege tus datos personales, de acuerdo con el RGPD y la LOPDGDD.",
+};
 
 export default function PrivacidadPage() {
   return (
