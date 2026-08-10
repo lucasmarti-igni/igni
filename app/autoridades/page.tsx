@@ -28,7 +28,7 @@ export default function AutoridadesPage() {
           </div>
           <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-8">
             <p className="text-xs uppercase tracking-wide text-[#B8944A] mb-3">
-              Dirección académica y docente de Fuego y Parrilla
+              Dirección académica y docente de Parrilla y Fuego
             </p>
             <p className="font-medium text-lg text-[#2E2A22]">Lucas Martí Boldrini</p>
             <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">
