@@ -26,13 +26,13 @@ export default function VerificarIndex() {
           Verificar un certificado
         </h1>
         <p className="text-[#7A6F5F] text-sm mb-8">
-          Ingresa el codigo de verificacion que figura en el certificado o en
-          el codigo QR para confirmar su autenticidad.
+          Ingresá el código de verificación que figura en el certificado o en
+          el código QR para confirmar su autenticidad.
         </p>
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div>
             <label className="block text-sm text-[#7A6F5F] mb-1">
-              Codigo de verificacion
+              Código de verificación
             </label>
             <input
               type="text"
