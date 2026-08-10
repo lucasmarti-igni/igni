@@ -1,7 +1,14 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { productos } from "@/lib/productos";
+
+export const metadata: Metadata = {
+  title: "Tienda | IGNI",
+  description:
+    "Recetarios, libros y recursos de IGNI para llevar la técnica de tus niveles de certificación a tu cocina.",
+};
 
 export default function TiendaPage() {
   return (
@@ -12,11 +19,13 @@ export default function TiendaPage() {
           Tienda
         </h1>
         <p className="text-[#7A6F5F] mb-10 max-w-2xl">
-          Recetarios, libros y otros recursos de IGNI.
+          Herramientas para llevarte la técnica de IGNI a tu cocina.
+          Recetarios y libros pensados para acompañar cada nivel de tu
+          certificación.
         </p>
         {productos.length === 0 ? (
           <div className="rounded-xl border border-dashed border-[#E4D9C8] p-8 text-[#8A8070] max-w-xl">
-            Estamos preparando el catalogo. Todavia no hay productos
+            Estamos preparando el catálogo. Todavía no hay productos
             publicados.
           </div>
         ) : (
