@@ -1,8 +1,15 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { cursos } from "@/lib/cursos";
 import { proximamente } from "@/lib/proximamente";
+
+export const metadata: Metadata = {
+  title: "Cursos | IGNI",
+  description:
+    "Conocé las formaciones disponibles en IGNI y las próximas a lanzarse, cada una con su propio recorrido de niveles y certificación.",
+};
 
 export default function CursosPage() {
   return (
