@@ -1,44 +1,13 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
-const secciones = [
-  {
-    nombre: "Quiénes somos",
-    href: "/quienes-somos",
-    detalle: "Qué es IGNI, valores y objetivos",
-  },
-  {
-    nombre: "Autoridades y docentes",
-    href: "/autoridades",
-    detalle: "Dirección y cuerpo docente",
-  },
-  {
-    nombre: "Los cursos",
-    href: "/cursos",
-    detalle: "Listado y repositorio de cursos",
-  },
-  {
-    nombre: "Niveles y certificación",
-    href: "/niveles",
-    detalle: "Cómo funciona la certificación dual",
-  },
-  {
-    nombre: "Instituciones",
-    href: "/instituciones",
-    detalle: "Universidad y asociaciones que respaldan a IGNI",
-  },
-  {
-    nombre: "Tienda",
-    href: "/tienda",
-    detalle: "Recetarios, libros y otros recursos de IGNI",
-  },
-  {
-    nombre: "Próximamente",
-    href: "/proximamente",
-    detalle: "Las próximas formaciones de IGNI",
-  },
-];
+export const metadata: Metadata = {
+  title: "IGNI | Certificación culinaria profesional online y en español",
+  description:
+    "IGNI certifica técnica, producto y pensamiento culinario con el aval conjunto de una universidad acreditada y una asociación profesional del sector, verificable con código QR. Cien por ciento online y en español.",
+};
 
 export default function Home() {
   return (
@@ -82,10 +51,10 @@ export default function Home() {
           Quiénes somos
         </h2>
         <p className="text-[#7A6F5F] max-w-3xl leading-relaxed">
-          IGNI es una escuela de oficio, técnica y pensamiento culinario.
-          Formamos criterio y rigor profesional, con programas certificados
-          en conjunto por una universidad acreditada y una asociación
-          profesional del sector, verificable con código QR.
+          IGNI enseña oficio, técnica y pensamiento culinario con el rigor
+          de una escuela profesional. Cada nivel suma un certificado
+          propio, verificable con código QR, hasta llegar a la
+          certificación universitaria completa.
         </p>
         <Link
           href="/quienes-somos"
@@ -96,105 +65,20 @@ export default function Home() {
       </section>
 
       <section className="max-w-5xl mx-auto px-6 py-20">
-        <h2 className="text-2xl font-semibold mb-2 text-[#2E2A22]">
-          Explorá IGNI
+        <h2 className="text-2xl font-semibold mb-4 text-[#2E2A22]">
+          Empezá tu certificación
         </h2>
-        <p className="text-[#7A6F5F] mb-10 max-w-2xl">
-          Cada sección tiene su propia página.
+        <p className="text-[#7A6F5F] max-w-2xl mb-8 leading-relaxed">
+          Fuego y Parrilla es la primera formación de IGNI: tres niveles,
+          cada uno con su propio certificado, hasta llegar a la
+          certificación universitaria completa.
         </p>
-        <div className="grid sm:grid-cols-2 gap-4">
-          {secciones.map((s) => (
-            <Link
-              key={s.href}
-              href={s.href}
-              className="rounded-xl border border-[#E4D9C8] bg-white/40 p-6 hover:border-[#B8944A] transition-colors"
-            >
-              <p className="font-medium text-lg text-[#2E2A22]">
-                {s.nombre}
-              </p>
-              <p className="mt-2 text-sm text-[#8A8070]">{s.detalle}</p>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      <section className="max-w-5xl mx-auto px-6 py-20 border-t border-[#E4D9C8]">
-        <h2 className="text-2xl font-semibold mb-2 text-[#2E2A22]">
-          ¿Dónde estás hoy?
-        </h2>
-        <p className="text-[#7A6F5F] mb-10 max-w-2xl">
-          Elegí tu punto de partida.
-        </p>
-        <div className="grid sm:grid-cols-2 gap-4">
-          <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-6">
-            <p className="text-xs uppercase tracking-[0.14em] text-[#B8944A] mb-2">
-              Quiero empezar
-            </p>
-            <p className="font-medium text-lg text-[#2E2A22] mb-1">
-              Nivel Inicial, 169 euros
-            </p>
-            <p className="text-sm text-[#8A8070] mb-4">
-              Construí tus bases con método y criterio.
-            </p>
-            <Link
-              href="/niveles"
-              className="text-sm text-[#B8944A] hover:text-[#A6803D] transition-colors"
-            >
-              Empezar por acá →
-            </Link>
-          </div>
-          <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-6">
-            <p className="text-xs uppercase tracking-[0.14em] text-[#B8944A] mb-2">
-              Ya tengo experiencia
-            </p>
-            <p className="font-medium text-lg text-[#2E2A22] mb-1">
-              Nivel Avanzado, 375 euros
-            </p>
-            <p className="text-sm text-[#8A8070] mb-4">
-              Llevá la técnica a un nivel de aplicación profesional.
-            </p>
-            <Link
-              href="/niveles"
-              className="text-sm text-[#B8944A] hover:text-[#A6803D] transition-colors"
-            >
-              Subir de nivel →
-            </Link>
-          </div>
-          <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-6">
-            <p className="text-xs uppercase tracking-[0.14em] text-[#B8944A] mb-2">
-              Quiero especializarme
-            </p>
-            <p className="font-medium text-lg text-[#2E2A22] mb-1">
-              Nivel Experto, 499 euros
-            </p>
-            <p className="text-sm text-[#8A8070] mb-4">
-              Profundizá en el dominio técnico y conceptual.
-            </p>
-            <Link
-              href="/niveles"
-              className="text-sm text-[#B8944A] hover:text-[#A6803D] transition-colors"
-            >
-              Ir al nivel experto →
-            </Link>
-          </div>
-          <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-6">
-            <p className="text-xs uppercase tracking-[0.14em] text-[#B8944A] mb-2">
-              Quiero el recorrido completo
-            </p>
-            <p className="font-medium text-lg text-[#2E2A22] mb-1">
-              Los tres niveles juntos, 965 euros
-            </p>
-            <p className="text-sm text-[#8A8070] mb-4">
-              El camino entero, de inicial a experto, en un solo pack.
-            </p>
-            <Link
-              href="/niveles"
-              className="text-sm text-[#B8944A] hover:text-[#A6803D] transition-colors"
-            >
-              Ver el programa completo →
-            </Link>
-          </div>
-        </div>
+        <Link
+          href="/cursos/fuego-y-parrilla"
+          className="inline-block bg-[#B8944A] hover:bg-[#A6803D] text-[#F6EFE7] transition-colors font-medium rounded-full px-6 py-3"
+        >
+          Ver niveles y precios →
+        </Link>
       </section>
 
       <SiteFooter />
