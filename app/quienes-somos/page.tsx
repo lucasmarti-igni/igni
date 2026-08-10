@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+
+export const metadata: Metadata = {
+  title: "Quiénes somos | IGNI",
+  description:
+    "IGNI es una escuela de oficio, técnica y pensamiento culinario. Formamos criterio y rigor profesional con certificación dual verificable con código QR.",
+};
 
 export default function QuienesSomosPage() {
   return (
