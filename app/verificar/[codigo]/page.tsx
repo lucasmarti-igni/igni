@@ -24,29 +24,29 @@ export default async function VerificarCodigo({ params }: Props) {
           href="/verificar"
           className="text-sm text-[#8A8070] hover:text-[#2E2A22] transition-colors"
         >
-          ← Verificar otro codigo
+          ← Verificar otro código
         </a>
 
         {certificado ? (
           <div className="mt-6 rounded-xl border border-green-300 bg-green-50 p-8">
             <p className="text-xs uppercase tracking-wide text-green-700 mb-3">
-              Certificado autentico
+              Certificado auténtico
             </p>
             <p className="font-medium text-lg mb-1 text-[#2E2A22]">
               {certificado.nombre_alumno}
             </p>
             <p className="text-sm text-[#7A6F5F] mb-4">
               {certificado.tipo === "universitario"
-                ? "Certificacion universitaria"
+                ? "Certificación universitaria"
                 : "Certificado de nivel"}
             </p>
             <div className="text-sm text-[#8A8070] space-y-1">
               <p>Emitido por: {certificado.emitido_por}</p>
               <p>
-                Fecha de emision:{" "}
+                Fecha de emisión:{" "}
                 {new Date(certificado.emitido_at).toLocaleDateString("es-AR")}
               </p>
-              <p>Codigo: {certificado.codigo_verificacion}</p>
+              <p>Código: {certificado.codigo_verificacion}</p>
             </div>
           </div>
         ) : (
@@ -55,8 +55,8 @@ export default async function VerificarCodigo({ params }: Props) {
               Certificado no encontrado
             </p>
             <p className="text-sm text-[#7A6F5F]">
-              El codigo &quot;{codigo}&quot; no corresponde a ningun
-              certificado emitido por IGNI. Verifica que este bien escrito.
+              El código &quot;{codigo}&quot; no corresponde a ningún
+              certificado emitido por IGNI. Verificá que esté bien escrito.
             </p>
           </div>
         )}
