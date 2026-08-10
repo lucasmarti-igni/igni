@@ -2,11 +2,16 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
 const universidades = [
-  { nombre: "NIU", tipo: "Certificación universitaria" },
+  {
+    nombre: "NIU (Northern International University)",
+    tipo: "Certificación universitaria",
+    descripcion:
+      "Universidad digital con oferta académica 100% online, registrada legalmente en el estado de California, Estados Unidos, y enfocada en la educación superior y continua en Hispanoamérica.",
+  },
 ];
 
 const asociaciones = [
-  { nombre: "FELAMS", tipo: "Asociación profesional" },
+  { nombre: "FELAMS (Federación Latinoamericana de Master Chefs, Argentina)", tipo: "Asociación profesional" },
   { nombre: "Asociación de Parrilleros de Coahuila (APC)", tipo: "Asociación profesional" },
   { nombre: "World BBQ Argentina", tipo: "Asociación profesional" },
   { nombre: "Club Parrillero Costa Brava", tipo: "Asociación profesional" },
@@ -35,14 +40,17 @@ export default function InstitucionesPage() {
         <h2 className="text-sm uppercase tracking-wide text-[#B8944A] mb-4">
           Universidad
         </h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+        <div className="grid gap-4 mb-10">
           {universidades.map((u) => (
             <div
               key={u.nombre}
               className="rounded-xl border border-[#E4D9C8] bg-white/40 p-6"
             >
               <p className="font-medium text-[#2E2A22]">{u.nombre}</p>
-              <p className="mt-2 text-sm text-[#8A8070]">{u.tipo}</p>
+              <p className="mt-1 text-sm text-[#B8944A]">{u.tipo}</p>
+              <p className="mt-3 text-sm text-[#8A8070] leading-relaxed max-w-2xl">
+                {u.descripcion}
+              </p>
             </div>
           ))}
         </div>
