@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+
+export const metadata: Metadata = {
+  title: "Universidades y asociaciones | IGNI",
+  description:
+    "IGNI emite certificaciones junto a una universidad acreditada y asociaciones profesionales del sector, con convenios firmados que avalan cada nivel del programa.",
+};
 
 const universidades = [
   {
@@ -29,7 +36,7 @@ export default function InstitucionesPage() {
       <SiteHeader />
       <section className="max-w-5xl mx-auto px-6 py-20">
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4 text-[#2E2A22]">
-          Respaldo institucional
+          Universidades y asociaciones
         </h1>
         <p className="text-[#7A6F5F] mb-10 max-w-2xl">
           IGNI emite certificaciones junto a una universidad acreditada y
