@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+
+export const metadata: Metadata = {
+  title: "Autoridades y docentes | IGNI",
+  description:
+    "Conocé la dirección y el cuerpo docente de IGNI, la escuela de oficio, técnica y pensamiento culinario.",
+};
 
 export default function AutoridadesPage() {
   return (
