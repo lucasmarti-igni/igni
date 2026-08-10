@@ -69,12 +69,12 @@ export default function Home() {
           Empezá tu certificación
         </h2>
         <p className="text-[#7A6F5F] max-w-2xl mb-8 leading-relaxed">
-          Fuego y Parrilla es la primera formación de IGNI: tres niveles,
+          Parrilla y Fuego es la primera formación de IGNI: tres niveles,
           cada uno con su propio certificado, hasta llegar a la
           certificación universitaria completa.
         </p>
         <Link
-          href="/cursos/fuego-y-parrilla"
+          href="/cursos/parrilla-y-fuego"
           className="inline-block bg-[#B8944A] hover:bg-[#A6803D] text-[#F6EFE7] transition-colors font-medium rounded-full px-6 py-3"
         >
           Ver niveles y precios →
