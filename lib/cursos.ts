@@ -16,12 +16,12 @@ export type Curso = {
 
 export const cursos: Curso[] = [
   {
-    slug: "fuego-y-parrilla",
-    nombre: "Fuego y Parrilla",
+    slug: "parrilla-y-fuego",
+    nombre: "Parrilla y Fuego",
     resumen:
       "Curso de lanzamiento de IGNI. Tres niveles con certificación dual.",
     descripcion:
-      "Fuego y Parrilla es la formación de lanzamiento de IGNI. Tres niveles, cada uno con certificado propio, hasta llegar a la certificación universitaria completa.",
+      "Parrilla y Fuego es la formación de lanzamiento de IGNI. Tres niveles, cada uno con certificado propio, hasta llegar a la certificación universitaria completa.",
     niveles: [
       {
         nivel: "Nivel Inicial",
