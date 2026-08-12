@@ -16,7 +16,11 @@ export default function AutoridadesPage() {
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-8 text-[#2E2A22]">
           Autoridades y docentes
         </h1>
-        <div className="grid sm:grid-cols-2 gap-4">
+
+        <h2 className="text-sm uppercase tracking-wide text-[#B8944A] mb-4">
+          Autoridades
+        </h2>
+        <div className="grid sm:grid-cols-2 gap-4 mb-14">
           <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-8">
             <p className="text-xs uppercase tracking-wide text-[#B8944A] mb-3">
               Dirección
@@ -28,13 +32,29 @@ export default function AutoridadesPage() {
           </div>
           <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-8">
             <p className="text-xs uppercase tracking-wide text-[#B8944A] mb-3">
-              Dirección académica y docente de Parrilla y Fuego
+              Dirección académica
             </p>
             <p className="font-medium text-lg text-[#2E2A22]">Lucas Martí Boldrini</p>
             <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">
               Presidente y fundador de AEAP (Asociación Española de Asadores y
               Parrilleros), Promotor de Marca País Argentina y autor de tres
               libros publicados.
+            </p>
+          </div>
+        </div>
+
+        <h2 className="text-sm uppercase tracking-wide text-[#B8944A] mb-4">
+          Docentes
+        </h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-8">
+            <p className="text-xs uppercase tracking-wide text-[#B8944A] mb-3">
+              Docente de Parrilla y Fuego
+            </p>
+            <p className="font-medium text-lg text-[#2E2A22]">Lucas Martí Boldrini</p>
+            <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">
+              Primer docente confirmado de IGNI, a cargo de la formación
+              Parrilla y Fuego.
             </p>
           </div>
         </div>
