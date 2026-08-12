@@ -16,17 +16,13 @@ export default function QuienesSomosPage() {
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-8 text-[#2E2A22]">
           Quiénes somos
         </h1>
-        <div className="text-[#7A6F5F] max-w-3xl leading-relaxed space-y-5">
+        <div className="text-[#7A6F5F] max-w-3xl leading-relaxed">
           <p>
             IGNI es una escuela de oficio, técnica y pensamiento culinario.
-          </p>
-          <p>
             Formamos criterio y rigor profesional, no solo técnica suelta.
             Cada programa combina técnica, producto y pensamiento culinario,
             con certificación conjunta de una universidad acreditada y una
             asociación profesional del sector, verificable con código QR.
-          </p>
-          <p>
             Empezamos por el fuego, con Parrilla y Fuego como primera
             formación, pero el proyecto sigue creciendo hacia otras áreas
             de la cocina.
