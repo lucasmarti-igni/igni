@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import { cursos } from "@/lib/cursos";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
-import CheckoutButton from "@/components/CheckoutButton";
 
 export const dynamic = "force-static";
 
@@ -82,13 +81,6 @@ export default function CursoPage({
                 <p className="mt-3 text-sm text-[#B8944A] font-medium">
                   {n.precio} {n.moneda}
                 </p>
-              )}
-              {n.precio !== null && (
-                <CheckoutButton
-                  slug={curso.slug}
-                  nivel={n.nivel}
-                  label={`Comenzar — ${n.precio} ${n.moneda}`}
-                />
               )}
             </div>
           ))}
