@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 const links = [
   { href: "/quienes-somos", label: "Quiénes somos" },
@@ -11,6 +14,8 @@ const links = [
 ];
 
 export default function SiteHeader() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="border-b border-[#E4D9C8] sticky top-0 bg-[#F6EFE7]/95 backdrop-blur z-10">
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-6 px-6 py-3">
@@ -48,13 +53,52 @@ export default function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <Link
-          href="/alumno"
-          className="text-sm font-medium bg-[#B8944A] hover:bg-[#A6803D] text-[#F6EFE7] transition-colors rounded-full px-4 py-2 shrink-0 whitespace-nowrap"
-        >
-          Área de alumno
-        </Link>
+        <div className="flex items-center gap-3 shrink-0">
+          <Link
+            href="/alumno"
+            className="text-sm font-medium bg-[#B8944A] hover:bg-[#A6803D] text-[#F6EFE7] transition-colors rounded-full px-4 py-2 whitespace-nowrap"
+          >
+            Área de alumno
+          </Link>
+          <button
+            type="button"
+            aria-label={open ? "Cerrar menú" : "Abrir menú"}
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+            className="lg:hidden flex flex-col justify-center items-center gap-1.5 w-9 h-9 shrink-0"
+          >
+            <span
+              className={`block h-0.5 w-6 bg-[#2E2A22] transition-transform ${
+                open ? "translate-y-2 rotate-45" : ""
+              }`}
+            />
+            <span
+              className={`block h-0.5 w-6 bg-[#2E2A22] transition-opacity ${
+                open ? "opacity-0" : ""
+              }`}
+            />
+            <span
+              className={`block h-0.5 w-6 bg-[#2E2A22] transition-transform ${
+                open ? "-translate-y-2 -rotate-45" : ""
+              }`}
+            />
+          </button>
+        </div>
       </div>
+      {open && (
+        <nav className="lg:hidden border-t border-[#E4D9C8] bg-[#F6EFE7] px-6 py-4 flex flex-col gap-4 text-sm text-[#7A6F5F]">
+          {links.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              onClick={() => setOpen(false)}
+              className="hover:text-[#2E2A22] transition-colors"
+            >
+              {l.label}
+            </Link>
+          ))}
+        </nav>
+      )}
     </header>
   );
 }
