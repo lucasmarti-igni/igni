@@ -24,8 +24,17 @@ export default function AutoridadesPage() {
             <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">Docente y técnico en administración.</p>
           </div>
           <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-8">
+            <a href="https://lucasmartiboldrini.com" target="_blank" rel="noopener noreferrer" className="block mb-4">
+              <img
+                src="/lucas-director-academico.jpeg"
+                alt="Lucas Martí Boldrini, director académico de IGNI - lucasmartiboldrini.com"
+                className="w-20 h-20 rounded-full object-cover border border-[#E4D9C8]"
+              />
+            </a>
             <p className="text-xs uppercase tracking-wide text-[#B8944A] mb-3">Dirección académica</p>
-            <p className="font-medium text-lg text-[#2E2A22]">Lucas Martí Boldrini</p>
+            <a href="https://lucasmartiboldrini.com" target="_blank" rel="noopener noreferrer" className="font-medium text-lg text-[#2E2A22] hover:text-[#B8944A] transition-colors">
+              Lucas Martí Boldrini
+            </a>
             <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">
               30 años de trayectoria gastronómica. Docente, presidente y fundador de AEAP (Asociación Española de Asadores y Parrilleros), embajador de diferentes asociaciones gastronómicas internacionales en España, promotor de Marca País Argentina y autor de tres libros publicados.
             </p>
@@ -35,8 +44,17 @@ export default function AutoridadesPage() {
         <h2 className="text-sm uppercase tracking-wide text-[#B8944A] mb-4">Docentes</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-8">
+            <a href="https://lucasmartiboldrini.com" target="_blank" rel="noopener noreferrer" className="block mb-4">
+              <img
+                src="/lucas-docente.jpeg"
+                alt="Lucas Martí Boldrini, docente de Parrilla y Fuego en IGNI - lucasmartiboldrini.com"
+                className="w-20 h-20 rounded-full object-cover border border-[#E4D9C8]"
+              />
+            </a>
             <p className="text-xs uppercase tracking-wide text-[#B8944A] mb-3">Docente de Parrilla y Fuego</p>
-            <p className="font-medium text-lg text-[#2E2A22]">Lucas Martí Boldrini</p>
+            <a href="https://lucasmartiboldrini.com" target="_blank" rel="noopener noreferrer" className="font-medium text-lg text-[#2E2A22] hover:text-[#B8944A] transition-colors">
+              Lucas Martí Boldrini
+            </a>
             <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">Primer docente confirmado de IGNI, a cargo de la formación Parrilla y Fuego.</p>
           </div>
         </div>
