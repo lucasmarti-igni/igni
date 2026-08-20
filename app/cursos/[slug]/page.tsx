@@ -35,8 +35,23 @@ export default function CursoPage({
     notFound();
   }
 
+  const courseJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: curso.nombre,
+    description: curso.descripcion,
+    provider: {
+      "@type": "Organization",
+      name: "IGNI",
+    },
+  };
+
   return (
     <main className="min-h-screen bg-[#F6EFE7] text-[#2E2A22]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseJsonLd) }}
+      />
       <SiteHeader />
 
       <section className="max-w-5xl mx-auto px-6 py-16">
