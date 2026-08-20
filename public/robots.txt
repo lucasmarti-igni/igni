@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /alumno
+
+Sitemap: https://igni-alpha.vercel.app/sitemap.xml
