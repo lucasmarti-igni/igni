@@ -12,9 +12,21 @@ export const metadata: Metadata = {
 // TODO: reemplazar por el número real de WhatsApp de IGNI en cuanto Lucas lo confirme.
 const WHATSAPP_NUMERO = "5491100000000";
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "IGNI",
+  description:
+    "IGNI certifica técnica, producto y pensamiento culinario con el aval conjunto de una universidad acreditada y una asociación profesional del sector, verificable con código QR.",
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#F6EFE7] text-[#2E2A22]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
       <SiteHeader />
 
       <a
@@ -55,12 +67,6 @@ export default function Home() {
               className="bg-[#B8944A] hover:bg-[#A6803D] text-[#F6EFE7] transition-colors font-medium rounded-full px-6 py-3"
             >
               Empezá tu certificación
-            </Link>
-            <Link
-              href="/verificar"
-              className="border border-[#A9AEB2] text-[#5C5648] hover:border-[#7A6F5F] transition-colors font-medium rounded-full px-6 py-3"
-            >
-              Verificar un certificado
             </Link>
           </div>
         </div>
