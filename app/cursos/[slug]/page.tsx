@@ -205,7 +205,7 @@ export default function CursoPage({
         <p className="text-3xl font-bold text-[#B8944A] mb-6">€969</p>
         <div className="max-w-2xl space-y-4 text-[#7A6F5F] leading-relaxed">
           <p>
-            Es la forma más directa de alcanzar tu certificación universitaria completa: tres niveles, una sola decisión, sin pausas entre etapas. El mismo recorrido, comprado nivel por nivel, cuesta €1.043 — con el programa completo ahorrás €82 y asegurás tu objetivo final desde el primer día.
+            Es la forma más directa de alcanzar tu certificación universitaria completa: tres niveles, una sola decisión, sin pausas entre etapas. El mismo recorrido, comprado nivel por nivel, cuesta €1.043 — con el programa completo ahorrás €74 y asegurás tu objetivo final desde el primer día.
           </p>
           <p>
             ¿Preferís avanzar a tu ritmo? Podés empezar por el nivel que corresponda a tu experiencia y sumar los siguientes más adelante. La certificación universitaria completa se obtiene al completar los tres niveles, elijas el camino que elijas.
