@@ -4,8 +4,7 @@ import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
   title: "Autoridades y docentes | IGNI",
-  description:
-    "Conocé la dirección y el cuerpo docente de IGNI, la escuela de oficio, técnica y pensamiento culinario.",
+  description: "Conocé la dirección y el cuerpo docente de IGNI, la escuela de oficio, técnica y pensamiento culinario.",
 };
 
 export default function AutoridadesPage() {
@@ -17,50 +16,32 @@ export default function AutoridadesPage() {
           Autoridades y docentes
         </h1>
 
-        <h2 className="text-sm uppercase tracking-wide text-[#B8944A] mb-4">
-          Autoridades
-        </h2>
+        <h2 className="text-sm uppercase tracking-wide text-[#B8944A] mb-4">Autoridades</h2>
         <div className="grid sm:grid-cols-2 gap-4 mb-14">
           <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-8">
-            <p className="text-xs uppercase tracking-wide text-[#B8944A] mb-3">
-              Dirección
-            </p>
+            <p className="text-xs uppercase tracking-wide text-[#B8944A] mb-3">Dirección</p>
             <p className="font-medium text-lg text-[#2E2A22]">Mónica Ramos</p>
-            <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">
-              Docente y técnico en administración.
-            </p>
+            <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">Docente y técnico en administración.</p>
           </div>
           <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-8">
-            <p className="text-xs uppercase tracking-wide text-[#B8944A] mb-3">
-              Dirección académica
-            </p>
+            <p className="text-xs uppercase tracking-wide text-[#B8944A] mb-3">Dirección académica</p>
             <p className="font-medium text-lg text-[#2E2A22]">Lucas Martí Boldrini</p>
             <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">
-              Presidente y fundador de AEAP (Asociación Española de Asadores y
-              Parrilleros), Promotor de Marca País Argentina y autor de tres
-              libros publicados.
+              30 años de trayectoria gastronómica. Docente, presidente y fundador de AEAP (Asociación Española de Asadores y Parrilleros), embajador de diferentes asociaciones gastronómicas internacionales en España, promotor de Marca País Argentina y autor de tres libros publicados.
             </p>
           </div>
         </div>
 
-        <h2 className="text-sm uppercase tracking-wide text-[#B8944A] mb-4">
-          Docentes
-        </h2>
+        <h2 className="text-sm uppercase tracking-wide text-[#B8944A] mb-4">Docentes</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-8">
-            <p className="text-xs uppercase tracking-wide text-[#B8944A] mb-3">
-              Docente de Parrilla y Fuego
-            </p>
+            <p className="text-xs uppercase tracking-wide text-[#B8944A] mb-3">Docente de Parrilla y Fuego</p>
             <p className="font-medium text-lg text-[#2E2A22]">Lucas Martí Boldrini</p>
-            <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">
-              Primer docente confirmado de IGNI, a cargo de la formación
-              Parrilla y Fuego.
-            </p>
+            <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">Primer docente confirmado de IGNI, a cargo de la formación Parrilla y Fuego.</p>
           </div>
         </div>
         <p className="mt-6 text-sm text-[#8A8070]">
-          El cuerpo docente que dicta cada nivel se suma a esta sección a
-          medida que se confirma.
+          El cuerpo docente que dicta cada nivel se suma a esta sección a medida que se confirma.
         </p>
       </section>
       <SiteFooter />
