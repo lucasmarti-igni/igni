@@ -42,7 +42,7 @@ export default function SiteHeader() {
             />
           </div>
         </Link>
-        <nav className="hidden lg:flex items-center gap-5 text-sm text-[#7A6F5F] whitespace-nowrap overflow-x-auto">
+        <nav className="hidden lg:flex items-center gap-5 text-sm text-[#6B5D48] whitespace-nowrap overflow-x-auto">
           {links.map((l) => (
             <Link
               key={l.href}
@@ -86,7 +86,7 @@ export default function SiteHeader() {
         </div>
       </div>
       {open && (
-        <nav className="lg:hidden border-t border-[#E4D9C8] bg-[#F6EFE7] px-6 py-4 flex flex-col gap-4 text-sm text-[#7A6F5F]">
+        <nav className="lg:hidden border-t border-[#E4D9C8] bg-[#F6EFE7] px-6 py-4 flex flex-col gap-4 text-sm text-[#6B5D48]">
           {links.map((l) => (
             <Link
               key={l.href}
