@@ -63,7 +63,7 @@ export default function InstitucionesPage() {
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4 text-[#2E2A22]">
           Universidades y asociaciones
         </h1>
-        <p className="text-[#7A6F5F] mb-10 max-w-2xl">
+        <p className="text-[#6B5D48] mb-10 max-w-2xl">
           IGNI emite certificaciones junto a una universidad acreditada y
           asociaciones profesionales, con convenios firmados que avalan cada
           nivel del programa.
