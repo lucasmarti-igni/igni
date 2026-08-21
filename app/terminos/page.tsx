@@ -87,6 +87,30 @@ export default function TerminosPage() {
 
           <div>
             <h2 className="text-lg font-semibold text-[#2E2A22] mb-2">
+              Derecho de desistimiento
+            </h2>
+            <p>
+              De acuerdo con la normativa europea de protección de las
+              personas consumidoras, disponés de un plazo de 14 días
+              naturales desde la contratación para desistir del curso sin
+              necesidad de justificar tu decisión y sin ningún costo. Para
+              ejercer este derecho, podés escribirnos desde la página de
+              contacto indicando tu nombre, el curso contratado y la fecha de
+              inscripción. Te reembolsaremos el importe pagado dentro de los
+              14 días siguientes a la recepción de tu solicitud.
+            </p>
+            <p className="mt-4">
+              Si solicitás expresamente comenzar el curso antes de que
+              termine el plazo de 14 días, aceptás que el derecho de
+              desistimiento se pierde una vez que el contenido haya sido
+              ejecutado en su totalidad, conforme a la excepción prevista
+              para contenidos digitales y servicios prestados a distancia
+              cuya ejecución haya comenzado con tu consentimiento expreso.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-lg font-semibold text-[#2E2A22] mb-2">
               Limitación de responsabilidad
             </h2>
             <p>
