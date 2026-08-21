@@ -55,7 +55,7 @@ export default function Home() {
             La misma exigencia de las grandes escuelas de cocina, sin
             salir de tu casa
           </h1>
-          <p className="text-[#7A6F5F] max-w-xl mx-auto mb-10 text-lg leading-relaxed">
+          <p className="text-[#6B5D48] max-w-xl mx-auto mb-10 text-lg leading-relaxed">
             IGNI certifica técnica, producto y pensamiento culinario con el
             aval conjunto de una universidad acreditada y una asociación
             profesional del sector, verificable con código QR, cien por
@@ -76,7 +76,7 @@ export default function Home() {
         <h2 className="text-2xl font-semibold mb-4 text-[#2E2A22]">
           Quiénes somos
         </h2>
-        <p className="text-[#7A6F5F] max-w-3xl leading-relaxed">
+        <p className="text-[#6B5D48] max-w-3xl leading-relaxed">
           IGNI enseña oficio, técnica y pensamiento culinario con el rigor
           de una escuela profesional. Cada nivel suma un certificado
           propio, verificable con código QR, hasta llegar a la
@@ -94,7 +94,7 @@ export default function Home() {
         <h2 className="text-2xl font-semibold mb-4 text-[#2E2A22]">
           Empezá tu certificación
         </h2>
-        <p className="text-[#7A6F5F] max-w-2xl mb-8 leading-relaxed">
+        <p className="text-[#6B5D48] max-w-2xl mb-8 leading-relaxed">
           Parrilla y Fuego es la primera formación de IGNI: tres niveles,
           cada uno con su propio certificado, hasta llegar a la
           certificación universitaria completa.
