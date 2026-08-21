@@ -82,7 +82,7 @@ export default function Alumno() {
             ← Volver al inicio
           </a>
           <h1 className="text-2xl font-semibold mt-6 mb-2 text-[#2E2A22]">Área de alumno</h1>
-          <p className="text-[#7A6F5F] text-sm mb-8">
+          <p className="text-[#6B5D48] text-sm mb-8">
             Sesión iniciada como <span className="text-[#2E2A22]">{session.user.email}</span>.
           </p>
           <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-6 mb-6">
@@ -96,7 +96,7 @@ export default function Alumno() {
           </div>
           <button
             onClick={handleLogout}
-            className="w-full border border-[#A9AEB2] text-[#5C5648] hover:border-[#7A6F5F] transition-colors font-medium rounded-full px-6 py-3"
+            className="w-full border border-[#A9AEB2] text-[#5C5648] hover:border-[#6B5D48] transition-colors font-medium rounded-full px-6 py-3"
           >
             Cerrar sesión
           </button>
@@ -115,7 +115,7 @@ export default function Alumno() {
           ← Volver al inicio
         </a>
         <h1 className="text-2xl font-semibold mt-6 mb-2 text-[#2E2A22]">Área de alumno</h1>
-        <p className="text-[#7A6F5F] text-sm mb-8">
+        <p className="text-[#6B5D48] text-sm mb-8">
           Acá vas a poder acceder a tus cursos, tu progreso por nivel y tus
           certificados con código QR de verificación.
         </p>
@@ -156,7 +156,7 @@ export default function Alumno() {
         <form className="space-y-4" onSubmit={handleSubmit}>
           {mode === "signup" && (
             <div>
-              <label className="block text-sm text-[#7A6F5F] mb-1">
+              <label className="block text-sm text-[#6B5D48] mb-1">
                 Nombre completo
               </label>
               <input
@@ -170,7 +170,7 @@ export default function Alumno() {
             </div>
           )}
           <div>
-            <label className="block text-sm text-[#7A6F5F] mb-1">
+            <label className="block text-sm text-[#6B5D48] mb-1">
               Email
             </label>
             <input
@@ -183,7 +183,7 @@ export default function Alumno() {
             />
           </div>
           <div>
-            <label className="block text-sm text-[#7A6F5F] mb-1">
+            <label className="block text-sm text-[#6B5D48] mb-1">
               Contraseña
             </label>
             <input
