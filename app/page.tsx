@@ -85,7 +85,7 @@ export default function Home() {
         </p>
         <Link
           href="/quienes-somos"
-          className="inline-block mt-6 text-base font-semibold text-[#7D5F29] hover:text-[#5F4820] transition-colors"
+          className="inline-block mt-6 bg-[#B8944A] hover:bg-[#A6803D] text-[#F6EFE7] transition-colors font-medium rounded-full px-6 py-3"
         >
           Conocé la certificación →
         </Link>
