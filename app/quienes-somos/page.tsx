@@ -16,7 +16,7 @@ export default function QuienesSomosPage() {
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-8 text-[#2E2A22]">
           Quiénes somos
         </h1>
-        <div className="text-[#7A6F5F] max-w-3xl leading-relaxed">
+        <div className="text-[#6B5D48] max-w-3xl leading-relaxed">
           <p>
             IGNI es una escuela de oficio, técnica y pensamiento culinario.
             Formamos criterio y rigor profesional, no solo técnica suelta.
