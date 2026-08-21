@@ -51,7 +51,7 @@ export default function ProductoPage({
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-6 text-[#2E2A22]">
           {producto.nombre}
         </h1>
-        <p className="text-[#7A6F5F] max-w-2xl leading-relaxed mb-6">
+        <p className="text-[#6B5D48] max-w-2xl leading-relaxed mb-6">
           {producto.descripcion}
         </p>
         <p className="text-2xl font-semibold mb-8 text-[#2E2A22]">
