@@ -16,7 +16,7 @@ export default function TerminosPage() {
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-8 text-[#2E2A22]">
           Términos y condiciones
         </h1>
-        <div className="text-[#7A6F5F] leading-relaxed space-y-6">
+        <div className="text-[#6B5D48] leading-relaxed space-y-6">
           <p>
             Estos términos y condiciones regulan el uso del sitio web y los
             servicios de formación online ofrecidos por IGNI (en adelante,
