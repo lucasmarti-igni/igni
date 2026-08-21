@@ -35,7 +35,7 @@ export default async function VerificarCodigo({ params }: Props) {
             <p className="font-medium text-lg mb-1 text-[#2E2A22]">
               {certificado.nombre_alumno}
             </p>
-            <p className="text-sm text-[#7A6F5F] mb-4">
+            <p className="text-sm text-[#6B5D48] mb-4">
               {certificado.tipo === "universitario"
                 ? "Certificación universitaria"
                 : "Certificado de nivel"}
@@ -54,7 +54,7 @@ export default async function VerificarCodigo({ params }: Props) {
             <p className="text-xs uppercase tracking-wide text-red-600 mb-3">
               Certificado no encontrado
             </p>
-            <p className="text-sm text-[#7A6F5F]">
+            <p className="text-sm text-[#6B5D48]">
               El código &quot;{codigo}&quot; no corresponde a ningún
               certificado emitido por IGNI. Verificá que esté bien escrito.
             </p>
