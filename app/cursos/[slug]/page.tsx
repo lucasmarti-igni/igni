@@ -86,7 +86,7 @@ export default function CursoPage({
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-6 text-[#2E2A22]">
           {curso.nombre}
         </h1>
-        <p className="text-[#7A6F5F] max-w-2xl leading-relaxed">
+        <p className="text-[#6B5D48] max-w-2xl leading-relaxed">
           {curso.descripcion}
         </p>
       </section>
@@ -95,7 +95,7 @@ export default function CursoPage({
         <h2 className="text-2xl font-semibold mb-2 text-[#2E2A22]">
           ¿Dónde estás hoy?
         </h2>
-        <p className="text-[#7A6F5F] mb-10 max-w-2xl">
+        <p className="text-[#6B5D48] mb-10 max-w-2xl">
           Elegí tu punto de partida. Cada nivel suma un certificado propio.
         </p>
         <div className="grid sm:grid-cols-2 gap-4">
@@ -108,7 +108,7 @@ export default function CursoPage({
                 {n.nivel}
               </span>
               <p className="mt-2 font-medium text-[#2E2A22]">{n.titulo}</p>
-              <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">
+              <p className="mt-2 text-[#6B5D48] text-sm leading-relaxed">
                 {n.aprendizajes}
               </p>
               {n.precio !== null && (
@@ -128,7 +128,7 @@ export default function CursoPage({
         <h2 className="text-2xl sm:text-3xl font-semibold mt-2 mb-6 text-[#2E2A22]">
           Curso de parrilla para principiantes online
         </h2>
-        <div className="max-w-2xl space-y-4 text-[#7A6F5F] leading-relaxed">
+        <div className="max-w-2xl space-y-4 text-[#6B5D48] leading-relaxed">
           <p>
             Nadie nace aprendiendo a encender una buena brasa. Este nivel no lo damos por sabido. Si nunca encendiste un fuego sin miedo, hoy empezás acá.
           </p>
@@ -148,7 +148,7 @@ export default function CursoPage({
         <h2 className="text-2xl sm:text-3xl font-semibold mt-2 mb-6 text-[#2E2A22]">
           Curso avanzado de parrilla online
         </h2>
-        <div className="max-w-2xl space-y-4 text-[#7A6F5F] leading-relaxed">
+        <div className="max-w-2xl space-y-4 text-[#6B5D48] leading-relaxed">
           <p>
             Acá se termina el asar por instinto. Es el salto de cocinar bien a saber por qué cocinás bien, y poder defenderlo.
           </p>
@@ -168,7 +168,7 @@ export default function CursoPage({
         <h2 className="text-2xl sm:text-3xl font-semibold mt-2 mb-6 text-[#2E2A22]">
           Curso experto de parrilla profesional online
         </h2>
-        <div className="max-w-2xl space-y-4 text-[#7A6F5F] leading-relaxed">
+        <div className="max-w-2xl space-y-4 text-[#6B5D48] leading-relaxed">
           <p>
             Este nivel no es para el que asa bien. Es para el que quiere que su nombre quede asociado al oficio.
           </p>
@@ -185,7 +185,7 @@ export default function CursoPage({
         <h2 className="text-2xl sm:text-3xl font-semibold mb-6 text-[#2E2A22]">
           ¿Qué certifica IGNI?
         </h2>
-        <div className="max-w-2xl space-y-4 text-[#7A6F5F] leading-relaxed">
+        <div className="max-w-2xl space-y-4 text-[#6B5D48] leading-relaxed">
           <p>
             IGNI es una escuela profesional de formación gastronómica. Certifica técnica, producto y criterio, evaluados nivel por nivel. Cada nivel otorga un certificado propio, verificable con código QR.
           </p>
@@ -199,11 +199,11 @@ export default function CursoPage({
         <h2 className="text-2xl sm:text-3xl font-semibold mb-2 text-[#2E2A22]">
           Programa completo
         </h2>
-        <p className="text-[#7A6F5F] mb-1">
+        <p className="text-[#6B5D48] mb-1">
           El camino entero, de inicial a experto, en un solo recorrido.
         </p>
         <p className="text-3xl font-bold text-[#B8944A] mb-6">€969</p>
-        <div className="max-w-2xl space-y-4 text-[#7A6F5F] leading-relaxed">
+        <div className="max-w-2xl space-y-4 text-[#6B5D48] leading-relaxed">
           <p>
             Es la forma más directa de alcanzar tu certificación universitaria completa: tres niveles, una sola decisión, sin pausas entre etapas. El mismo recorrido, comprado nivel por nivel, cuesta €1.043 — con el programa completo ahorrás €74 y asegurás tu objetivo final desde el primer día.
           </p>
@@ -221,7 +221,7 @@ export default function CursoPage({
           <p className="font-medium text-[#2E2A22] mb-2">
             ¿Cómo verifico un certificado?
           </p>
-          <p className="text-[#7A6F5F] leading-relaxed">
+          <p className="text-[#6B5D48] leading-relaxed">
             Cualquier certificado emitido por IGNI se puede verificar en línea en la web de IGNI.
           </p>
         </div>
