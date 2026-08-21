@@ -19,8 +19,9 @@ export default function CursosPage() {
           Los cursos
         </h1>
         <p className="text-[#6B5D48] mb-10 max-w-2xl">
-          Listado de cursos disponibles en IGNI. Cada uno tiene su propio
-          recorrido de niveles y certificación.
+          Cada curso de IGNI te lleva paso a paso hacia una certificación
+          universitaria completa, nivel por nivel y a tu ritmo. Elegí por
+          dónde empezar.
         </p>
         <div className="grid sm:grid-cols-2 gap-4">
           {cursos.map((c) => (
@@ -38,10 +39,10 @@ export default function CursosPage() {
         <div className="mt-16 rounded-xl border border-dashed border-[#E4D9C8] p-6 flex flex-wrap items-center justify-between gap-4">
           <div>
             <p className="font-medium text-[#2E2A22]">
-              IGNI crece de forma progresiva
+              IGNI sigue sumando formaciones
             </p>
             <p className="text-sm text-[#8A8070] mt-1">
-              Conocé las próximas formaciones en camino.
+              Enterate primero cuándo se abren las próximas.
             </p>
           </div>
           <Link
