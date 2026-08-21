@@ -16,7 +16,7 @@ export default function PrivacidadPage() {
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-8 text-[#2E2A22]">
           Política de privacidad
         </h1>
-        <div className="text-[#7A6F5F] leading-relaxed space-y-6">
+        <div className="text-[#6B5D48] leading-relaxed space-y-6">
           <p>
             En IGNI nos tomamos en serio la protección de tus datos
             personales. Esta política explica qué datos recogemos, con qué
