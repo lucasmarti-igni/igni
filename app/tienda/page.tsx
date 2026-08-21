@@ -18,7 +18,7 @@ export default function TiendaPage() {
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4 text-[#2E2A22]">
           Tienda
         </h1>
-        <p className="text-[#7A6F5F] mb-10 max-w-2xl">
+        <p className="text-[#6B5D48] mb-10 max-w-2xl">
           Herramientas para llevarte la técnica de IGNI a tu cocina.
           Recetarios y libros pensados para acompañar cada nivel de tu
           certificación.
