@@ -48,7 +48,7 @@ export default function Home() {
 
       <section className="relative overflow-hidden border-b border-[#E4D9C8]">
         <div className="relative max-w-3xl mx-auto px-6 py-24 text-center">
-          <span className="inline-block text-xs uppercase tracking-[0.18em] text-[#B8944A] mb-4">
+          <span className="inline-block text-2xl sm:text-3xl font-bold uppercase tracking-[0.1em] text-[#B8944A] mb-6">
             Certificación profesional dual
           </span>
           <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-6 text-[#2E2A22]">
