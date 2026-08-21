@@ -18,15 +18,40 @@ const universidades = [
 ];
 
 const asociaciones = [
-  { nombre: "FELAMS (Federación Latinoamericana de Master Chefs, Argentina)", tipo: "Asociación profesional" },
-  { nombre: "Asociación de Parrilleros de Coahuila (APC)", tipo: "Asociación profesional" },
-  { nombre: "World BBQ Argentina", tipo: "Asociación profesional" },
-  { nombre: "Club Parrillero Costa Brava", tipo: "Asociación profesional" },
-  { nombre: "Asociación Española de Asadores y Parrilleros (AEAP)", tipo: "Asociación profesional" },
-  { nombre: "Asociación Santafesina de Asadores y Afines", tipo: "Asociación profesional" },
+  {
+    nombre: "FELAMS (Federación Latinoamericana de Master Chefs, Argentina)",
+    tipo: "Asociación profesional",
+    descripcion: "Referente de chefs en Argentina.",
+  },
+  {
+    nombre: "Asociación de Parrilleros de Coahuila (APC)",
+    tipo: "Asociación profesional",
+    descripcion: "Referente de la parrilla en la zona norte de México.",
+  },
+  {
+    nombre: "World BBQ Argentina",
+    tipo: "Asociación profesional",
+    descripcion: "Referente de la parrilla y alta cocina al aire libre en Argentina.",
+  },
+  {
+    nombre: "Club Parrillero Costa Brava",
+    tipo: "Asociación profesional",
+    descripcion: "Referente de la parrilla en Cataluña, zona Costa Brava.",
+  },
+  {
+    nombre: "Asociación Española de Asadores y Parrilleros (AEAP)",
+    tipo: "Asociación profesional",
+    descripcion: "Referente de la parrilla a nivel nacional en España.",
+  },
+  {
+    nombre: "Asociación Santafesina de Asadores y Afines",
+    tipo: "Asociación profesional",
+    descripcion: "Referente de la parrilla y asado tradicional en Santa Fe y provincias aledañas, Argentina.",
+  },
   {
     nombre: "Asociación Ecuatoriana de Asadores",
     tipo: "Asociación profesional",
+    descripcion: "Referente de la parrilla a nivel nacional en Ecuador.",
   },
 ];
 
@@ -72,7 +97,10 @@ export default function InstitucionesPage() {
               className="rounded-xl border border-[#E4D9C8] bg-white/40 p-6"
             >
               <p className="font-medium text-[#2E2A22]">{a.nombre}</p>
-              <p className="mt-2 text-sm text-[#8A8070]">{a.tipo}</p>
+              <p className="mt-2 text-sm text-[#B8944A]">{a.tipo}</p>
+              <p className="mt-2 text-sm text-[#8A8070] leading-relaxed">
+                {a.descripcion}
+              </p>
             </div>
           ))}
         </div>
