@@ -21,37 +21,37 @@ const asociaciones = [
   {
     nombre: "FELAMS (Federación Latinoamericana de Master Chefs, Argentina)",
     tipo: "Asociación profesional",
-    descripcion: "Referente de chefs en Argentina.",
+    descripcion: "La federación de referencia para los chefs en Argentina. Firma tu certificado quien manda en el oficio.",
   },
   {
     nombre: "Asociación de Parrilleros de Coahuila (APC)",
     tipo: "Asociación profesional",
-    descripcion: "Referente de la parrilla en la zona norte de México.",
+    descripcion: "La autoridad de la parrilla en el norte de México. Avalan tu técnica los que la viven a diario.",
   },
   {
     nombre: "World BBQ Argentina",
     tipo: "Asociación profesional",
-    descripcion: "Referente de la parrilla y alta cocina al aire libre en Argentina.",
+    descripcion: "Referentes de la parrilla y la alta cocina al aire libre en Argentina. Certifican que dominás el fuego.",
   },
   {
     nombre: "Club Parrillero Costa Brava",
     tipo: "Asociación profesional",
-    descripcion: "Referente de la parrilla en Cataluña, zona Costa Brava.",
+    descripcion: "El club que marca el nivel de la parrilla en la Costa Brava. Su comunidad reconoce tu técnica.",
   },
   {
     nombre: "Asociación Española de Asadores y Parrilleros (AEAP)",
     tipo: "Asociación profesional",
-    descripcion: "Referente de la parrilla a nivel nacional en España.",
+    descripcion: "La asociación de referencia de la parrilla en España, de norte a sur. Su aval certifica tu nivel.",
   },
   {
     nombre: "Asociación Santafesina de Asadores y Afines",
     tipo: "Asociación profesional",
-    descripcion: "Referente de la parrilla y asado tradicional en Santa Fe y provincias aledañas, Argentina.",
+    descripcion: "Guardianes del asado tradicional en Santa Fe y la región. Certifican que respetás el oficio.",
   },
   {
     nombre: "Asociación Ecuatoriana de Asadores",
     tipo: "Asociación profesional",
-    descripcion: "Referente de la parrilla a nivel nacional en Ecuador.",
+    descripcion: "La asociación que define el estándar de la parrilla en Ecuador. Certifica que estás a la altura.",
   },
 ];
 
