@@ -21,7 +21,7 @@ export default function AutoridadesPage() {
           <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-8">
             <p className="text-xs uppercase tracking-wide text-[#B8944A] mb-3">Dirección</p>
             <p className="font-medium text-lg text-[#2E2A22]">Mónica Ramos</p>
-            <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">Docente y técnico en administración.</p>
+            <p className="mt-2 text-[#6B5D48] text-sm leading-relaxed">Docente y técnico en administración.</p>
           </div>
           <div className="rounded-xl border border-[#E4D9C8] bg-white/40 p-8">
             <a href="https://lucasmartiboldrini.com" target="_blank" rel="noopener noreferrer" className="block mb-4">
@@ -35,7 +35,7 @@ export default function AutoridadesPage() {
             <a href="https://lucasmartiboldrini.com" target="_blank" rel="noopener noreferrer" className="font-medium text-lg text-[#2E2A22] hover:text-[#B8944A] transition-colors">
               Lucas Martí Boldrini
             </a>
-            <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">
+            <p className="mt-2 text-[#6B5D48] text-sm leading-relaxed">
               30 años de trayectoria gastronómica. Docente, presidente y fundador de AEAP (Asociación Española de Asadores y Parrilleros), embajador de diferentes asociaciones gastronómicas internacionales en España, promotor de Marca País Argentina y autor de tres libros publicados.
             </p>
           </div>
@@ -55,7 +55,7 @@ export default function AutoridadesPage() {
             <a href="https://lucasmartiboldrini.com" target="_blank" rel="noopener noreferrer" className="font-medium text-lg text-[#2E2A22] hover:text-[#B8944A] transition-colors">
               Lucas Martí Boldrini
             </a>
-            <p className="mt-2 text-[#7A6F5F] text-sm leading-relaxed">Primer docente confirmado de IGNI, a cargo de la formación Parrilla y Fuego.</p>
+            <p className="mt-2 text-[#6B5D48] text-sm leading-relaxed">Primer docente confirmado de IGNI, a cargo de la formación Parrilla y Fuego.</p>
           </div>
         </div>
         <p className="mt-6 text-sm text-[#8A8070]">
