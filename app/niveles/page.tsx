@@ -34,7 +34,7 @@ export default function NivelesPage() {
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4 text-[#2E2A22]">
           Niveles y certificación
         </h1>
-        <p className="text-[#7A6F5F] mb-10 max-w-2xl">
+        <p className="text-[#6B5D48] mb-10 max-w-2xl">
           Cada certificado incluye un código QR de verificación único.
           Cualquiera puede escanearlo para confirmar que es auténtico en
           nuestra página pública de validación.
