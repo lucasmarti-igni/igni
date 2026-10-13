@@ -19,11 +19,6 @@ const universidades = [
 
 const asociaciones = [
   {
-    nombre: "FELAMS (Federación Latinoamericana de Master Chefs, Argentina)",
-    tipo: "Asociación profesional",
-    descripcion: "La federación de referencia para los chefs en Argentina. Firma tu certificado quien manda en el oficio.",
-  },
-  {
     nombre: "Asociación de Parrilleros de Coahuila (APC)",
     tipo: "Asociación profesional",
     descripcion: "La autoridad de la parrilla en el norte de México. Avalan tu técnica los que la viven a diario.",
@@ -42,11 +37,6 @@ const asociaciones = [
     nombre: "Asociación Española de Asadores y Parrilleros (AEAP)",
     tipo: "Asociación profesional",
     descripcion: "La asociación de referencia de la parrilla en España, de norte a sur. Su aval certifica tu nivel.",
-  },
-  {
-    nombre: "Asociación Santafesina de Asadores y Afines",
-    tipo: "Asociación profesional",
-    descripcion: "Guardianes del asado tradicional en Santa Fe y la región. Certifican que respetás el oficio.",
   },
   {
     nombre: "Asociación Ecuatoriana de Asadores",
